@@ -197,7 +197,7 @@ Operational Recommendations
 ### Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/hiba-hasan/event-driven-congestion-management.git
 cd gridlock-event-driven-congestion
 ```
 
