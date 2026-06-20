@@ -1,0 +1,3983 @@
+{
+  "UrvashiJunction": {
+    "junction_name": "UrvashiJunction",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Unknown_Junction": {
+    "junction_name": "Unknown_Junction",
+    "event_count": 1247,
+    "avg_recovery_hours": 110.11501685002985,
+    "median_recovery_hours": 12.010494722222223,
+    "std_recovery_hours": 666.0797150443348,
+    "resilience_score": 0.008999683646267938,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "HebbalFlyoverJunc": {
+    "junction_name": "HebbalFlyoverJunc",
+    "event_count": 27,
+    "avg_recovery_hours": 2.5510347222222225,
+    "median_recovery_hours": 2.5510347222222225,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.28160806024847995,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Bellary Road 1",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "28thMainJayanagarJunc": {
+    "junction_name": "28thMainJayanagarJunc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Peenya14thCrossJunc": {
+    "junction_name": "Peenya14thCrossJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SilkBoardJunc": {
+    "junction_name": "SilkBoardJunc",
+    "event_count": 29,
+    "avg_recovery_hours": 0.07931416666666667,
+    "median_recovery_hours": 0.07931416666666667,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9265142910968927,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "RingRoad-UllalJunction": {
+    "junction_name": "RingRoad-UllalJunction",
+    "event_count": 7,
+    "avg_recovery_hours": 6.341319133888889,
+    "median_recovery_hours": 6.341319133888889,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.13621530160483214,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BhadrappaLayout": {
+    "junction_name": "BhadrappaLayout",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "ORR North 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BucheryJunction": {
+    "junction_name": "BucheryJunction",
+    "event_count": 11,
+    "avg_recovery_hours": 672.0246941666667,
+    "median_recovery_hours": 672.0246941666667,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.001485829581986128,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "PotteryCircle": {
+    "junction_name": "PotteryCircle",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "VeerannapalyaJunction(BEL,HO)": {
+    "junction_name": "VeerannapalyaJunction(BEL,HO)",
+    "event_count": 30,
+    "avg_recovery_hours": 7.269204642857142,
+    "median_recovery_hours": 6.6702,
+    "std_recovery_hours": 6.406859466994872,
+    "resilience_score": 0.12093061463459974,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "ORR North 1",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "TrinityCircle": {
+    "junction_name": "TrinityCircle",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "CID-CarltonHouseJunc": {
+    "junction_name": "CID-CarltonHouseJunc",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "CoffeeBoardJunc": {
+    "junction_name": "CoffeeBoardJunc",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "CBD 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PoliceTimmaiahCircle(GPO)": {
+    "junction_name": "PoliceTimmaiahCircle(GPO)",
+    "event_count": 14,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "CBD 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Delmia-Jayanagar": {
+    "junction_name": "Delmia-Jayanagar",
+    "event_count": 3,
+    "avg_recovery_hours": 26.737875000000003,
+    "median_recovery_hours": 26.737875000000003,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.03605178839402802,
+    "resilience_category": "Fragile",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "SirsiCircle": {
+    "junction_name": "SirsiCircle",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "K R Circle": {
+    "junction_name": "K R Circle",
+    "event_count": 24,
+    "avg_recovery_hours": 4.0,
+    "median_recovery_hours": 4.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.2,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "ModiBridgeJunction": {
+    "junction_name": "ModiBridgeJunction",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KrishnaFlourMill": {
+    "junction_name": "KrishnaFlourMill",
+    "event_count": 15,
+    "avg_recovery_hours": 2160.0,
+    "median_recovery_hours": 2160.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.00046274872744099955,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "Richmond circle jn": {
+    "junction_name": "Richmond circle jn",
+    "event_count": 8,
+    "avg_recovery_hours": 363.0469444444444,
+    "median_recovery_hours": 363.0469444444444,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.0027468984845513667,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "WilsonGarden10thCrossJunc": {
+    "junction_name": "WilsonGarden10thCrossJunc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MICO Bande": {
+    "junction_name": "MICO Bande",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MekhriCircle": {
+    "junction_name": "MekhriCircle",
+    "event_count": 59,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Bellary Road 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Bamboobazar(Shivajinagar)": {
+    "junction_name": "Bamboobazar(Shivajinagar)",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "HainsJunc": {
+    "junction_name": "HainsJunc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BagalakunteCrossJunction": {
+    "junction_name": "BagalakunteCrossJunction",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "CMP GateJunc": {
+    "junction_name": "CMP GateJunc",
+    "event_count": 14,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KatriguppeJunction": {
+    "junction_name": "KatriguppeJunction",
+    "event_count": 11,
+    "avg_recovery_hours": 0.8343776655555555,
+    "median_recovery_hours": 0.8343776655555555,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.5451440119323205,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SindhiColonyJunction": {
+    "junction_name": "SindhiColonyJunction",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BangaloreBodyBuildersJunc": {
+    "junction_name": "BangaloreBodyBuildersJunc",
+    "event_count": 16,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "NavarangBarJunc-Dr RajkumarRd": {
+    "junction_name": "NavarangBarJunc-Dr RajkumarRd",
+    "event_count": 2,
+    "avg_recovery_hours": 2159.5,
+    "median_recovery_hours": 2159.5,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.0004628558204119417,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "LeprosyhospitalJunc": {
+    "junction_name": "LeprosyhospitalJunc",
+    "event_count": 18,
+    "avg_recovery_hours": 2.6875139583333336,
+    "median_recovery_hours": 2.717310972222222,
+    "std_recovery_hours": 1.4888266422203245,
+    "resilience_score": 0.27118541415690683,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Magadi Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "HulimaveRd-BanneraghattaRdJunc": {
+    "junction_name": "HulimaveRd-BanneraghattaRdJunc",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ArakereGateJunc": {
+    "junction_name": "ArakereGateJunc",
+    "event_count": 13,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Trilight Circle,Race course Road": {
+    "junction_name": "Trilight Circle,Race course Road",
+    "event_count": 1,
+    "avg_recovery_hours": 1464.0,
+    "median_recovery_hours": 1464.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.0006825938566552901,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned"
+    ]
+  },
+  "SubbannaJunction": {
+    "junction_name": "SubbannaJunction",
+    "event_count": 9,
+    "avg_recovery_hours": 733.4650795138889,
+    "median_recovery_hours": 722.4387559722222,
+    "std_recovery_hours": 730.233442962491,
+    "resilience_score": 0.0013615351197661532,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "AyyappaTempleJunc": {
+    "junction_name": "AyyappaTempleJunc",
+    "event_count": 47,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "AnepalyaJunc": {
+    "junction_name": "AnepalyaJunc",
+    "event_count": 6,
+    "avg_recovery_hours": 15.0,
+    "median_recovery_hours": 15.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.0625,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "MintoJunction": {
+    "junction_name": "MintoJunction",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "VishweswaraiahJunctio(Uttamsagar)": {
+    "junction_name": "VishweswaraiahJunctio(Uttamsagar)",
+    "event_count": 1,
+    "avg_recovery_hours": 2183.5,
+    "median_recovery_hours": 2183.5,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.00045777065690089265,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned"
+    ]
+  },
+  "NGV RearGateJunc": {
+    "junction_name": "NGV RearGateJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PriyadarshiniHotel,Jayamahal,RT Nagar": {
+    "junction_name": "PriyadarshiniHotel,Jayamahal,RT Nagar",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BigBazaar(Whitefield)Junc": {
+    "junction_name": "BigBazaar(Whitefield)Junc",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PurnimaTheaterJunc": {
+    "junction_name": "PurnimaTheaterJunc",
+    "event_count": 8,
+    "avg_recovery_hours": 49.016666666666666,
+    "median_recovery_hours": 49.016666666666666,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.019993335554815063,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "IndianExpressJunction": {
+    "junction_name": "IndianExpressJunction",
+    "event_count": 13,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "CBD 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MahalaxmiLayoutEntranceJunc": {
+    "junction_name": "MahalaxmiLayoutEntranceJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "JayadevaHospitalJunc": {
+    "junction_name": "JayadevaHospitalJunc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "GokuldasImagesJunc": {
+    "junction_name": "GokuldasImagesJunc",
+    "event_count": 26,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BigBazaarJunction(OldMadrasRd)": {
+    "junction_name": "BigBazaarJunction(OldMadrasRd)",
+    "event_count": 23,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KalyanNagar-ORR Junc": {
+    "junction_name": "KalyanNagar-ORR Junc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 2",
+    "primary_corridor": "ORR North 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "YeshwanthpuraCircle": {
+    "junction_name": "YeshwanthpuraCircle",
+    "event_count": 30,
+    "avg_recovery_hours": 1.184858506882716,
+    "median_recovery_hours": 1.0049129788888889,
+    "std_recovery_hours": 0.531264507408981,
+    "resilience_score": 0.4576955426860877,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Minerva Circle": {
+    "junction_name": "Minerva Circle",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ModiHospital": {
+    "junction_name": "ModiHospital",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Batrayanapura(Amrutahalli)Junction": {
+    "junction_name": "Batrayanapura(Amrutahalli)Junction",
+    "event_count": 11,
+    "avg_recovery_hours": 2.010288611111111,
+    "median_recovery_hours": 2.010288611111111,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.3321940614959492,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Bellary Road 2",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "Dr RajkumarRd-10thCrossRdJunc": {
+    "junction_name": "Dr RajkumarRd-10thCrossRdJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "D'SouzaCircle": {
+    "junction_name": "D'SouzaCircle",
+    "event_count": 3,
+    "avg_recovery_hours": 1.4517097222222222,
+    "median_recovery_hours": 1.4517097222222222,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.4078786289159889,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "BloodBankCircle": {
+    "junction_name": "BloodBankCircle",
+    "event_count": 14,
+    "avg_recovery_hours": 532.0708522222222,
+    "median_recovery_hours": 532.0708522222222,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.0018759232395305083,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KoramangalaWaterTankJunc": {
+    "junction_name": "KoramangalaWaterTankJunc",
+    "event_count": 27,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "IRR(Thanisandra road)",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "TataInstituteCircle": {
+    "junction_name": "TataInstituteCircle",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "TownhallJunction": {
+    "junction_name": "TownhallJunction",
+    "event_count": 28,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BMTCJunction-K H Road": {
+    "junction_name": "BMTCJunction-K H Road",
+    "event_count": 10,
+    "avg_recovery_hours": 178.58547253999998,
+    "median_recovery_hours": 1.9162119641666666,
+    "std_recovery_hours": 249.96458608942262,
+    "resilience_score": 0.005568379144795607,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Shivashankara circle": {
+    "junction_name": "Shivashankara circle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PES-DevegowdaCircle": {
+    "junction_name": "PES-DevegowdaCircle",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "HesaraghattaJunction": {
+    "junction_name": "HesaraghattaJunction",
+    "event_count": 24,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "toll gate mysore road": {
+    "junction_name": "toll gate mysore road",
+    "event_count": 31,
+    "avg_recovery_hours": 0.8850640563888889,
+    "median_recovery_hours": 0.8850640563888889,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.5304859517164863,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ISRO Junction-Airport rd": {
+    "junction_name": "ISRO Junction-Airport rd",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Airport Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "WilsonGarden12thCrossJunc": {
+    "junction_name": "WilsonGarden12thCrossJunc",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SatteliteBusStandJunc": {
+    "junction_name": "SatteliteBusStandJunc",
+    "event_count": 39,
+    "avg_recovery_hours": 1.1526844141666668,
+    "median_recovery_hours": 1.1526844141666668,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.4645362754610333,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PeenyaPoliceStation": {
+    "junction_name": "PeenyaPoliceStation",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Chokasandra (Tumkur road)": {
+    "junction_name": "Chokasandra (Tumkur road)",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "27th Cross Jayanagar(Ganapathi Temple)": {
+    "junction_name": "27th Cross Jayanagar(Ganapathi Temple)",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Malleswaram18thCrossRd-SampigeRdJunc": {
+    "junction_name": "Malleswaram18thCrossRd-SampigeRdJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Arbindo Circle": {
+    "junction_name": "Arbindo Circle",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "NaganathapuraJunction": {
+    "junction_name": "NaganathapuraJunction",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "CommandoHospitalJunc": {
+    "junction_name": "CommandoHospitalJunc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PoliceCornerJunc": {
+    "junction_name": "PoliceCornerJunc",
+    "event_count": 24,
+    "avg_recovery_hours": 169.54648472222223,
+    "median_recovery_hours": 169.54648472222223,
+    "std_recovery_hours": 169.49902083333333,
+    "resilience_score": 0.0058635040272378,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "FTI Junction(KanteeravaStudio)": {
+    "junction_name": "FTI Junction(KanteeravaStudio)",
+    "event_count": 10,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "WebbsCircle": {
+    "junction_name": "WebbsCircle",
+    "event_count": 3,
+    "avg_recovery_hours": 168.05938805555556,
+    "median_recovery_hours": 168.05938805555556,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.005915081152851354,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "BilekahalliJunc": {
+    "junction_name": "BilekahalliJunc",
+    "event_count": 12,
+    "avg_recovery_hours": 7.5227200000000005,
+    "median_recovery_hours": 7.5227200000000005,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.11733343345786322,
+    "resilience_category": "Fragile",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "Bommanahalli": {
+    "junction_name": "Bommanahalli",
+    "event_count": 22,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "Ashoknagar Junction(ShoolayCircle)": {
+    "junction_name": "Ashoknagar Junction(ShoolayCircle)",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Srigandakaval": {
+    "junction_name": "Srigandakaval",
+    "event_count": 11,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Magadi Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BanashankariBusStandJunc": {
+    "junction_name": "BanashankariBusStandJunc",
+    "event_count": 12,
+    "avg_recovery_hours": 7.0,
+    "median_recovery_hours": 7.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.125,
+    "resilience_category": "Fragile",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "MargosaRd-18thCrossJunc": {
+    "junction_name": "MargosaRd-18thCrossJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "UlsoorGateJunc": {
+    "junction_name": "UlsoorGateJunc",
+    "event_count": 11,
+    "avg_recovery_hours": 0.010431944444444445,
+    "median_recovery_hours": 0.010431944444444445,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9896757574799556,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "SRS Peenya Junc": {
+    "junction_name": "SRS Peenya Junc",
+    "event_count": 18,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Kammanahalli-RingRoadJunction": {
+    "junction_name": "Kammanahalli-RingRoadJunction",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 2",
+    "primary_corridor": "ORR North 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "StateBankofMysoreJunc": {
+    "junction_name": "StateBankofMysoreJunc",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MeenakshiMallJunc": {
+    "junction_name": "MeenakshiMallJunc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KanakapuraRd-RingRdJunction": {
+    "junction_name": "KanakapuraRd-RingRdJunction",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SantheCircle": {
+    "junction_name": "SantheCircle",
+    "event_count": 21,
+    "avg_recovery_hours": 9.998162777777777,
+    "median_recovery_hours": 9.998162777777777,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.09092427710022073,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Bellary Road 2",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "JakkurCrossJunction": {
+    "junction_name": "JakkurCrossJunction",
+    "event_count": 14,
+    "avg_recovery_hours": 2.233261666666667,
+    "median_recovery_hours": 2.233261666666667,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.3092852058061081,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Bellary Road 2",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "PlatformRdJunction": {
+    "junction_name": "PlatformRdJunction",
+    "event_count": 6,
+    "avg_recovery_hours": 16.0,
+    "median_recovery_hours": 16.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.058823529411764705,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "Marigowda-TavarkereRdJunc": {
+    "junction_name": "Marigowda-TavarkereRdJunc",
+    "event_count": 12,
+    "avg_recovery_hours": 1.8848264814814815,
+    "median_recovery_hours": 2.4365541666666664,
+    "std_recovery_hours": 1.2035811907655956,
+    "resilience_score": 0.34664129937078825,
+    "resilience_category": "Fragile",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "Devasandra(k r puram)": {
+    "junction_name": "Devasandra(k r puram)",
+    "event_count": 27,
+    "avg_recovery_hours": 0.9940729683333334,
+    "median_recovery_hours": 0.9940729683333334,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.5014861621818234,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BagalurCrossJunc": {
+    "junction_name": "BagalurCrossJunc",
+    "event_count": 25,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Bellary Road 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "OldMadrasRd-SuddaguntepalyaRdJunc": {
+    "junction_name": "OldMadrasRd-SuddaguntepalyaRdJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ShantalaJunction": {
+    "junction_name": "ShantalaJunction",
+    "event_count": 11,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "OldMadrasRd-NGEF Junc": {
+    "junction_name": "OldMadrasRd-NGEF Junc",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Deverabeesanahalli-ORR Junc": {
+    "junction_name": "Deverabeesanahalli-ORR Junc",
+    "event_count": 13,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "JalahalliCross(SM Circle)": {
+    "junction_name": "JalahalliCross(SM Circle)",
+    "event_count": 29,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SagarTheatreJunc": {
+    "junction_name": "SagarTheatreJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 59.05,
+    "median_recovery_hours": 59.05,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.01665278934221482,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KundanahalliGateJunc": {
+    "junction_name": "KundanahalliGateJunc",
+    "event_count": 11,
+    "avg_recovery_hours": 5.893179722222222,
+    "median_recovery_hours": 5.893179722222222,
+    "std_recovery_hours": 0.037951388888888715,
+    "resilience_score": 0.14507093102131105,
+    "resilience_category": "Fragile",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "Varthur Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "SiddalingaiahCircle": {
+    "junction_name": "SiddalingaiahCircle",
+    "event_count": 11,
+    "avg_recovery_hours": 8.0,
+    "median_recovery_hours": 8.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.1111111111111111,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "HopefarmJunction": {
+    "junction_name": "HopefarmJunction",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "RRR(Okalipuram)Junction": {
+    "junction_name": "RRR(Okalipuram)Junction",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Shivajinagar(BRV)Junction": {
+    "junction_name": "Shivajinagar(BRV)Junction",
+    "event_count": 16,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "5thMainHSR": {
+    "junction_name": "5thMainHSR",
+    "event_count": 3,
+    "avg_recovery_hours": 0.017509166666666666,
+    "median_recovery_hours": 0.017509166666666666,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9827921288178403,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "K H Road-SiddaiahRdJunc(BMTC-BigBazaar)": {
+    "junction_name": "K H Road-SiddaiahRdJunc(BMTC-BigBazaar)",
+    "event_count": 3,
+    "avg_recovery_hours": 11.041404444444444,
+    "median_recovery_hours": 11.041404444444444,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.0830467911458095,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "MaratahalliBridgeJunc": {
+    "junction_name": "MaratahalliBridgeJunc",
+    "event_count": 16,
+    "avg_recovery_hours": 5.5442052777777775,
+    "median_recovery_hours": 5.5442052777777775,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.1528069425627142,
+    "resilience_category": "Fragile",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "Varthur Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "GowdanapalyaJunction": {
+    "junction_name": "GowdanapalyaJunction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "TyagiHengalvarayaJunc(DickensonRd)": {
+    "junction_name": "TyagiHengalvarayaJunc(DickensonRd)",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "CBD 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "EliteJunc": {
+    "junction_name": "EliteJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Jaipuria-Adugodi": {
+    "junction_name": "Jaipuria-Adugodi",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "IRR(Thanisandra road)",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "OldPoliceStation-Ashoknagar": {
+    "junction_name": "OldPoliceStation-Ashoknagar",
+    "event_count": 5,
+    "avg_recovery_hours": 0.05645111111111111,
+    "median_recovery_hours": 0.05645111111111111,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9465653350946461,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "Nagavara-ORR Junction": {
+    "junction_name": "Nagavara-ORR Junction",
+    "event_count": 28,
+    "avg_recovery_hours": 234.7885807638889,
+    "median_recovery_hours": 119.99778986111112,
+    "std_recovery_hours": 270.7312240771938,
+    "resilience_score": 0.004241087489310468,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Hennur Main Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "HennurRoad-ORR Junc": {
+    "junction_name": "HennurRoad-ORR Junc",
+    "event_count": 15,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Airport New South Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MS RamaiahJunc(TollGate)": {
+    "junction_name": "MS RamaiahJunc(TollGate)",
+    "event_count": 11,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "LalbaghMainGateJunc": {
+    "junction_name": "LalbaghMainGateJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "LinkRoadMalleswaramJunc": {
+    "junction_name": "LinkRoadMalleswaramJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "YelhankaBypass": {
+    "junction_name": "YelhankaBypass",
+    "event_count": 16,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Bellary Road 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "TamarikannanJunc": {
+    "junction_name": "TamarikannanJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Sumanhalli": {
+    "junction_name": "Sumanhalli",
+    "event_count": 12,
+    "avg_recovery_hours": 2.419085801111111,
+    "median_recovery_hours": 2.419085801111111,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.2924758424240266,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Magadi Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Basveshwarnagar 8th main Junction": {
+    "junction_name": "Basveshwarnagar 8th main Junction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "GarebhavipalyaJunc": {
+    "junction_name": "GarebhavipalyaJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "A S CharStreet-MysoreRdJunc": {
+    "junction_name": "A S CharStreet-MysoreRdJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.4798027733333333,
+    "median_recovery_hours": 0.4798027733333333,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.6757657290690486,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "IbblurJunction'": {
+    "junction_name": "IbblurJunction'",
+    "event_count": 9,
+    "avg_recovery_hours": 0.5917960394444445,
+    "median_recovery_hours": 0.5917960394444445,
+    "std_recovery_hours": 0.021796298333333297,
+    "resilience_score": 0.6282211886574436,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Dr TCM RoyanRd near AmbedkarStatue": {
+    "junction_name": "Dr TCM RoyanRd near AmbedkarStatue",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MC Circle": {
+    "junction_name": "MC Circle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "South end circle": {
+    "junction_name": "South end circle",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "HalliThindi": {
+    "junction_name": "HalliThindi",
+    "event_count": 3,
+    "avg_recovery_hours": 1.3089766016666666,
+    "median_recovery_hours": 1.3089766016666666,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.43309230560334805,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BinnyMillJunction": {
+    "junction_name": "BinnyMillJunction",
+    "event_count": 5,
+    "avg_recovery_hours": 1.9918983333333333,
+    "median_recovery_hours": 1.9918983333333333,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.3342359561014495,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "SandeepUnnikrishnan-Yelhanka": {
+    "junction_name": "SandeepUnnikrishnan-Yelhanka",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "YelhankaCircle": {
+    "junction_name": "YelhankaCircle",
+    "event_count": 26,
+    "avg_recovery_hours": 0.6825547008333334,
+    "median_recovery_hours": 0.6825547008333334,
+    "std_recovery_hours": 0.1444231763888889,
+    "resilience_score": 0.5943343176330145,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Bellary Road 2",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "29thMainRdBTM LayoutJunc": {
+    "junction_name": "29thMainRdBTM LayoutJunc",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KogilluCrossJunc": {
+    "junction_name": "KogilluCrossJunc",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Bellary Road 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "DomlurWaterTank": {
+    "junction_name": "DomlurWaterTank",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Airport Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "ShivandaCircle": {
+    "junction_name": "ShivandaCircle",
+    "event_count": 11,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KuvempuCircle": {
+    "junction_name": "KuvempuCircle",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "ORR North 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KamrajRdJunction": {
+    "junction_name": "KamrajRdJunction",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MayohallJunction": {
+    "junction_name": "MayohallJunction",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ShankarMuttCircle": {
+    "junction_name": "ShankarMuttCircle",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KhodaysCircle(DV UrsCircle)": {
+    "junction_name": "KhodaysCircle(DV UrsCircle)",
+    "event_count": 19,
+    "avg_recovery_hours": 0.9122667638888889,
+    "median_recovery_hours": 0.9122667638888889,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.5229395913184969,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KuvempuCircleJunc,HAL MainGate": {
+    "junction_name": "KuvempuCircleJunc,HAL MainGate",
+    "event_count": 1,
+    "avg_recovery_hours": 0.09733305555555556,
+    "median_recovery_hours": 0.09733305555555556,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9113003521922722,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 2",
+    "primary_corridor": "Old Airport Road",
+    "event_types": [
+      "planned"
+    ]
+  },
+  "RajeshwariJunc": {
+    "junction_name": "RajeshwariJunc",
+    "event_count": 21,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "OldMadrasRd-Indranagar100ftRdJunc": {
+    "junction_name": "OldMadrasRd-Indranagar100ftRdJunc",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BTM16thMain-ORR Junc": {
+    "junction_name": "BTM16thMain-ORR Junc",
+    "event_count": 5,
+    "avg_recovery_hours": 1.1649408333333333,
+    "median_recovery_hours": 1.1649408333333333,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.4619063877419282,
+    "resilience_category": "Fragile",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "RajajinagarEntranceJunction": {
+    "junction_name": "RajajinagarEntranceJunction",
+    "event_count": 5,
+    "avg_recovery_hours": 0.010048333333333333,
+    "median_recovery_hours": 0.010048333333333333,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9900516311925666,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "MillCornerRd-SampigeRdJunc": {
+    "junction_name": "MillCornerRd-SampigeRdJunc",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SarjapurRd-St JohnsRdJunc": {
+    "junction_name": "SarjapurRd-St JohnsRdJunc",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MysoreRd-RingRdJunc(Nayandanahallii)": {
+    "junction_name": "MysoreRd-RingRdJunc(Nayandanahallii)",
+    "event_count": 17,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "HudsonCircle": {
+    "junction_name": "HudsonCircle",
+    "event_count": 15,
+    "avg_recovery_hours": 4.0,
+    "median_recovery_hours": 4.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.2,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "ChaudrayaCircle/UdayaTVCircle(CantonmentJunc)": {
+    "junction_name": "ChaudrayaCircle/UdayaTVCircle(CantonmentJunc)",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Yemalur cross junc": {
+    "junction_name": "Yemalur cross junc",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "Old Airport Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MinskSquare(CTO Junction)": {
+    "junction_name": "MinskSquare(CTO Junction)",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "CBD 2",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Kadubeesanahalli-ORR Junc": {
+    "junction_name": "Kadubeesanahalli-ORR Junc",
+    "event_count": 12,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KarnatakaBhavanJunction": {
+    "junction_name": "KarnatakaBhavanJunction",
+    "event_count": 8,
+    "avg_recovery_hours": 8.0,
+    "median_recovery_hours": 8.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.1111111111111111,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "SadashivnagarJunc": {
+    "junction_name": "SadashivnagarJunc",
+    "event_count": 11,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "HoramavuJunction": {
+    "junction_name": "HoramavuJunction",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 2",
+    "primary_corridor": "ORR North 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Bellandur Junction, Outer ring road": {
+    "junction_name": "Bellandur Junction, Outer ring road",
+    "event_count": 3,
+    "avg_recovery_hours": 0.001911111111111111,
+    "median_recovery_hours": 0.001911111111111111,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9980925342678436,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "KensingtonOvalJunc": {
+    "junction_name": "KensingtonOvalJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "LowerAgaram(IndiaGarage)Junc": {
+    "junction_name": "LowerAgaram(IndiaGarage)Junc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ShivajiTalkiesJunc": {
+    "junction_name": "ShivajiTalkiesJunc",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "LRDE Junction": {
+    "junction_name": "LRDE Junction",
+    "event_count": 9,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Bellary Road 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BEL Circle": {
+    "junction_name": "BEL Circle",
+    "event_count": 24,
+    "avg_recovery_hours": 0.009157777777777779,
+    "median_recovery_hours": 0.009157777777777779,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9909253260694837,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "ORR North 2",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "OldMadrasRd-DoubleRdJunc": {
+    "junction_name": "OldMadrasRd-DoubleRdJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ChandraLayoutJunc-nearWaterTank": {
+    "junction_name": "ChandraLayoutJunc-nearWaterTank",
+    "event_count": 2,
+    "avg_recovery_hours": 1.7802642852777777,
+    "median_recovery_hours": 1.7802642852777777,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.35967803683098043,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Bellary Road 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Nagarbhavi": {
+    "junction_name": "Nagarbhavi",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Indiranasgar13thMainJunc": {
+    "junction_name": "Indiranasgar13thMainJunc",
+    "event_count": 2,
+    "avg_recovery_hours": 1.234656111111111,
+    "median_recovery_hours": 1.234656111111111,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.4474961471824773,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "IRR(Thanisandra road)",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "AshirwadamCircle": {
+    "junction_name": "AshirwadamCircle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Kudlu Gate Junc": {
+    "junction_name": "Kudlu Gate Junc",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KIMCO Junction": {
+    "junction_name": "KIMCO Junction",
+    "event_count": 25,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "JP Nagar 15th cross junction": {
+    "junction_name": "JP Nagar 15th cross junction",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "N R SquareJunc": {
+    "junction_name": "N R SquareJunc",
+    "event_count": 10,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "GoruguntepalyaJunc": {
+    "junction_name": "GoruguntepalyaJunc",
+    "event_count": 18,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "UCO Bank(Forum)": {
+    "junction_name": "UCO Bank(Forum)",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "JohnsonMarket": {
+    "junction_name": "JohnsonMarket",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "DhobiGhatJunc": {
+    "junction_name": "DhobiGhatJunc",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "AnilKumbleCircle": {
+    "junction_name": "AnilKumbleCircle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "RamamurthyNagarJunction": {
+    "junction_name": "RamamurthyNagarJunction",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 2",
+    "primary_corridor": "ORR North 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "AttiguppeCircleJunction": {
+    "junction_name": "AttiguppeCircleJunction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "NIMHANS Junction": {
+    "junction_name": "NIMHANS Junction",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "VetenaryHospitalJunc-Shivajinagar": {
+    "junction_name": "VetenaryHospitalJunc-Shivajinagar",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MotherTeressaCircle": {
+    "junction_name": "MotherTeressaCircle",
+    "event_count": 8,
+    "avg_recovery_hours": 0.023295555555555555,
+    "median_recovery_hours": 0.023295555555555555,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9772347730535111,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "TumkurRdMarappanapalyaJunc": {
+    "junction_name": "TumkurRdMarappanapalyaJunc",
+    "event_count": 14,
+    "avg_recovery_hours": 1.3585179009722221,
+    "median_recovery_hours": 1.3585179009722221,
+    "std_recovery_hours": 0.25307415125,
+    "resilience_score": 0.42399508589177237,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Tumkur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Ring road-Near Kengunte Junction": {
+    "junction_name": "Ring road-Near Kengunte Junction",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "AgaraJunction": {
+    "junction_name": "AgaraJunction",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "OldMadrasRd-80FeetRdJunc": {
+    "junction_name": "OldMadrasRd-80FeetRdJunc",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Srinivagilu(Ejipura)Junc": {
+    "junction_name": "Srinivagilu(Ejipura)Junc",
+    "event_count": 3,
+    "avg_recovery_hours": 120.05986,
+    "median_recovery_hours": 120.05986,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.008260376313007465,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "IRR(Thanisandra road)",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "AdugodiJunc": {
+    "junction_name": "AdugodiJunc",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Hosur Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BEML GateJunc(SuranjandasRd)": {
+    "junction_name": "BEML GateJunc(SuranjandasRd)",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "GorappanapalyaJunction": {
+    "junction_name": "GorappanapalyaJunction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "NavarangTheatreJunction": {
+    "junction_name": "NavarangTheatreJunction",
+    "event_count": 4,
+    "avg_recovery_hours": 3888.0,
+    "median_recovery_hours": 3888.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.00025713551041398817,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "UttarahalliJunction": {
+    "junction_name": "UttarahalliJunction",
+    "event_count": 15,
+    "avg_recovery_hours": 11.0,
+    "median_recovery_hours": 11.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.08333333333333333,
+    "resilience_category": "Fragile",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "HSR14thMainJunc": {
+    "junction_name": "HSR14thMainJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "ORR East 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Fire Force Junction": {
+    "junction_name": "Fire Force Junction",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KodigehalliCross": {
+    "junction_name": "KodigehalliCross",
+    "event_count": 10,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Bellary Road 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ItmaduJunction": {
+    "junction_name": "ItmaduJunction",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BegumMahalJunc": {
+    "junction_name": "BegumMahalJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "QueensStatueCircle": {
+    "junction_name": "QueensStatueCircle",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "HoodiJunction": {
+    "junction_name": "HoodiJunction",
+    "event_count": 6,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ShivanahalliJunctionWOC": {
+    "junction_name": "ShivanahalliJunctionWOC",
+    "event_count": 3,
+    "avg_recovery_hours": 0.889963141388889,
+    "median_recovery_hours": 0.889963141388889,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.5291108477730014,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "NCERT Junction": {
+    "junction_name": "NCERT Junction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KadirenahalliJunction": {
+    "junction_name": "KadirenahalliJunction",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Krupanidhi College": {
+    "junction_name": "Krupanidhi College",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PrasannaJunction": {
+    "junction_name": "PrasannaJunction",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Magadi Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "TC Palya-OM RoadJunc": {
+    "junction_name": "TC Palya-OM RoadJunc",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "TVS CrossJunction": {
+    "junction_name": "TVS CrossJunction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "NTTF JunctionPeenya": {
+    "junction_name": "NTTF JunctionPeenya",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Peenya2ndStageBusStand": {
+    "junction_name": "Peenya2ndStageBusStand",
+    "event_count": 2,
+    "avg_recovery_hours": 48.05454972222222,
+    "median_recovery_hours": 48.05454972222222,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.020385468945543897,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "Narayanapura cross, Hegde nagar": {
+    "junction_name": "Narayanapura cross, Hegde nagar",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Hennur Main Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Jayanagar 4th main,36th cross": {
+    "junction_name": "Jayanagar 4th main,36th cross",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "OperaHouseJunc": {
+    "junction_name": "OperaHouseJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "UniversityJunc(Janabharti)": {
+    "junction_name": "UniversityJunc(Janabharti)",
+    "event_count": 11,
+    "avg_recovery_hours": 48.0,
+    "median_recovery_hours": 48.0,
+    "std_recovery_hours": 6.0,
+    "resilience_score": 0.02040816326530612,
+    "resilience_category": "Fragile",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "JaiMuniRaoCircle": {
+    "junction_name": "JaiMuniRaoCircle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Magadi Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "RamaiahCircle-UlsoorPoliceStation": {
+    "junction_name": "RamaiahCircle-UlsoorPoliceStation",
+    "event_count": 8,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SonyworldJunction": {
+    "junction_name": "SonyworldJunction",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "IRR(Thanisandra road)",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SwagathMainRd-EastEndRdJunc": {
+    "junction_name": "SwagathMainRd-EastEndRdJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BhashyamCircle-SadashivNagar": {
+    "junction_name": "BhashyamCircle-SadashivNagar",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "CashPharmacyJunction": {
+    "junction_name": "CashPharmacyJunction",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BiryandCircle": {
+    "junction_name": "BiryandCircle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Rajajinagagr1stBlockJunction": {
+    "junction_name": "Rajajinagagr1stBlockJunction",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ASC Junction": {
+    "junction_name": "ASC Junction",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "DevegowdaPetrolBunkJunc": {
+    "junction_name": "DevegowdaPetrolBunkJunc",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "GopalGowdaJUnc": {
+    "junction_name": "GopalGowdaJUnc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "GovindapuraCross": {
+    "junction_name": "GovindapuraCross",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MysoreRd--MadhuPetrolBunkJunction": {
+    "junction_name": "MysoreRd--MadhuPetrolBunkJunction",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 1",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "DairyCircle": {
+    "junction_name": "DairyCircle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Rajajinagar19thMainJunc": {
+    "junction_name": "Rajajinagar19thMainJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "HennurRd-DavisRdJunction": {
+    "junction_name": "HennurRd-DavisRdJunction",
+    "event_count": 5,
+    "avg_recovery_hours": 9003.374769166667,
+    "median_recovery_hours": 887.5,
+    "std_recovery_hours": 14542.839339641616,
+    "resilience_score": 0.00011105712785570204,
+    "resilience_category": "Fragile",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Airport New South Road",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "SubedarChatramRd near SheshadripuramPS": {
+    "junction_name": "SubedarChatramRd near SheshadripuramPS",
+    "event_count": 7,
+    "avg_recovery_hours": 17113.459389904998,
+    "median_recovery_hours": 25595.5,
+    "std_recovery_hours": 11995.41686739571,
+    "resilience_score": 5.843012491471698e-05,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "SiddapuraJunction": {
+    "junction_name": "SiddapuraJunction",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "K R MarketJunction": {
+    "junction_name": "K R MarketJunction",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KonanakunteJunction(KanakapurarRd)": {
+    "junction_name": "KonanakunteJunction(KanakapurarRd)",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "RoyanCircle-Chamrajpete": {
+    "junction_name": "RoyanCircle-Chamrajpete",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "AnjaneyaTempleJunc": {
+    "junction_name": "AnjaneyaTempleJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BasavamantapaJunc-Dr RajkumarRd": {
+    "junction_name": "BasavamantapaJunc-Dr RajkumarRd",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Basappa Circle Junction": {
+    "junction_name": "Basappa Circle Junction",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ChandrikaJunction": {
+    "junction_name": "ChandrikaJunction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BM ShriJunc(CMH-100FtRd)Junc": {
+    "junction_name": "BM ShriJunc(CMH-100FtRd)Junc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "IRR(Thanisandra road)",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ManipalCentreJunc": {
+    "junction_name": "ManipalCentreJunc",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Arts&CraftsCircle": {
+    "junction_name": "Arts&CraftsCircle",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "17th Mn 1st Crs Aishwarya Stores Jn": {
+    "junction_name": "17th Mn 1st Crs Aishwarya Stores Jn",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BDA Junctio-Koramangala": {
+    "junction_name": "BDA Junctio-Koramangala",
+    "event_count": 6,
+    "avg_recovery_hours": 1.6042875,
+    "median_recovery_hours": 1.6042875,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.3839821832266983,
+    "resilience_category": "Fragile",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "IRR(Thanisandra road)",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "WiproJunc-Koramangala": {
+    "junction_name": "WiproJunc-Koramangala",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "DevangaHostelJunction": {
+    "junction_name": "DevangaHostelJunction",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0045449999999999996,
+    "median_recovery_hours": 0.0045449999999999996,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9954755635636034,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Mysore Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "GangammagudiJunc": {
+    "junction_name": "GangammagudiJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "BasaweshwaraCircle": {
+    "junction_name": "BasaweshwaraCircle",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Bellary Road 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MarenahalliRd-18thMainRdJunc": {
+    "junction_name": "MarenahalliRd-18thMainRdJunc",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0023447222222222224,
+    "median_recovery_hours": 0.0023447222222222224,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.9976607626395998,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "CholurpalyaJunction(MagadiRd)": {
+    "junction_name": "CholurpalyaJunction(MagadiRd)",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KCG HospitalJunction": {
+    "junction_name": "KCG HospitalJunction",
+    "event_count": 2,
+    "avg_recovery_hours": 0.1789575,
+    "median_recovery_hours": 0.1789575,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 0.84820699643541,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned",
+      "planned"
+    ]
+  },
+  "DickensonRd-AdigasJunc": {
+    "junction_name": "DickensonRd-AdigasJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "AnandRaoJunction": {
+    "junction_name": "AnandRaoJunction",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "SagarHospitalJunc": {
+    "junction_name": "SagarHospitalJunc",
+    "event_count": 5,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "VijayanagarBusStandJunction": {
+    "junction_name": "VijayanagarBusStandJunction",
+    "event_count": 5,
+    "avg_recovery_hours": 0.06815361111111111,
+    "median_recovery_hours": 0.06815361111111111,
+    "std_recovery_hours": 0.030939444444444446,
+    "resilience_score": 0.9361949345092635,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "BhashyamCircle": {
+    "junction_name": "BhashyamCircle",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "PuttammaChoultryNagarbhavi": {
+    "junction_name": "PuttammaChoultryNagarbhavi",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "OldMadrasRd-BMTC DepotJunc": {
+    "junction_name": "OldMadrasRd-BMTC DepotJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Old Madras Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ColesParkJunc": {
+    "junction_name": "ColesParkJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "LalbaghWestGate": {
+    "junction_name": "LalbaghWestGate",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KamakyaJunction": {
+    "junction_name": "KamakyaJunction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "ORR West 1",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "RajarajeshwariKalyanaMantapaJunc": {
+    "junction_name": "RajarajeshwariKalyanaMantapaJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "CIL CrossJunction-JayamahalRd": {
+    "junction_name": "CIL CrossJunction-JayamahalRd",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "NationalCollege": {
+    "junction_name": "NationalCollege",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "DMRoadJunc(Basavangudi)": {
+    "junction_name": "DMRoadJunc(Basavangudi)",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "YediyurMeternityHospital": {
+    "junction_name": "YediyurMeternityHospital",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "J D MaraJunc": {
+    "junction_name": "J D MaraJunc",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Bannerghata Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "5thMainRPC Layout-Vijayanagar": {
+    "junction_name": "5thMainRPC Layout-Vijayanagar",
+    "event_count": 3,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "West of Chord Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "JP Nagar 9th cross-24th main jn": {
+    "junction_name": "JP Nagar 9th cross-24th main jn",
+    "event_count": 4,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "Geethanjali jn": {
+    "junction_name": "Geethanjali jn",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned",
+      "unplanned"
+    ]
+  },
+  "ISRO Junction-NewBEL Rd": {
+    "junction_name": "ISRO Junction-NewBEL Rd",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned"
+    ]
+  },
+  "MaharajaJunction": {
+    "junction_name": "MaharajaJunction",
+    "event_count": 2,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "South Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "UpparpetJunction": {
+    "junction_name": "UpparpetJunction",
+    "event_count": 2,
+    "avg_recovery_hours": 311.7495061111111,
+    "median_recovery_hours": 311.7495061111111,
+    "std_recovery_hours": 24.24950611111109,
+    "resilience_score": 0.0031974470957109305,
+    "resilience_category": "Fragile",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "planned"
+    ]
+  },
+  "HosmatJunction": {
+    "junction_name": "HosmatJunction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ESI(k r puram)": {
+    "junction_name": "ESI(k r puram)",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "East Zone 1",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "KHB Junction": {
+    "junction_name": "KHB Junction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "West Zone 2",
+    "primary_corridor": "Magadi Road",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "MSRamaiahHospitalJunc": {
+    "junction_name": "MSRamaiahHospitalJunc",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "North Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "ThomasCafe-New": {
+    "junction_name": "ThomasCafe-New",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  },
+  "K G Junction": {
+    "junction_name": "K G Junction",
+    "event_count": 1,
+    "avg_recovery_hours": 0.0,
+    "median_recovery_hours": 0.0,
+    "std_recovery_hours": 0.0,
+    "resilience_score": 1.0,
+    "resilience_category": "Resilient",
+    "primary_zone": "Central Zone 2",
+    "primary_corridor": "Non-corridor",
+    "event_types": [
+      "unplanned"
+    ]
+  }
+}

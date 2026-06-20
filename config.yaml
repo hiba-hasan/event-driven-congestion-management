@@ -1,0 +1,35 @@
+clustering:
+  k_min: 3
+  k_max: 10
+  optimal_k: 10  # Will be auto-detected if not set
+
+resilience_scoring:
+  recovery_time_weight: 1.0  # How much recovery time impacts score
+  min_events_per_junction: 1  # Minimum events to compute score
+  score_normalization: true  # Normalize scores to [0, 1]
+
+learning_failure_detection:
+  cv_threshold: 0.5  # Coefficient of variation threshold for flagging
+  min_events_for_combo: 2  # Minimum events per (junction, cluster) to check
+  severity_critical_cv: 1.0  # CV above this = critical
+
+data:
+  raw_csv: "data/raw/events_raw.csv"
+  processed_parquet: "data/processed/events_cleaned.parquet"
+  clustered_parquet: "data/processed/events_clustered.parquet"
+
+results:
+  cluster_profiles: "results/cluster_profiles.json"
+  junction_scores: "results/junction_scores.json"
+  corridor_scores: "results/corridor_scores.json"
+  zone_scores: "results/zone_scores.json"
+  learning_failures: "results/learning_failures.json"
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true
+
+dashboard:
+  host: "0.0.0.0"
+  port: 8501

@@ -1,0 +1,519 @@
+{
+  "failures": [
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 5,
+      "event_count": 64,
+      "avg_recovery_hours": 105.43544228342749,
+      "std_recovery_hours": 264.2842017080468,
+      "coefficient_of_variation": 2.5065973640780888,
+      "event_type": "planned",
+      "recovery_times": [
+        1391.5,
+        96.12209583333333,
+        0.03954972222222222,
+        23.5,
+        0.04313472222222222,
+        17.0,
+        4.005095833333333,
+        144.00070694444443,
+        2.007155,
+        24.53006472222222,
+        24.02297388888889,
+        111.24972777777778,
+        96.00908000000001,
+        672.0287036111112,
+        61.03615583333333,
+        1344.0,
+        1.4467347222222222,
+        12.006933888888888,
+        48.0,
+        0.003181666666666667,
+        9.918703055555556,
+        72.04433611111111,
+        132.00693333333334,
+        4.024946944444444,
+        0.030009722222222222,
+        0.05867833333333333,
+        2.1246188888888886,
+        0.010772222222222223,
+        359.6895261111111,
+        119.99748722222223,
+        1.8848675000000001,
+        1.8534666666666666,
+        96.01581527777778,
+        3.0095319444444444,
+        24.00137472222222,
+        5.787841666666666,
+        289.1003836111111,
+        0.07009333333333334,
+        1.4122516666666667,
+        264.03427250000004,
+        210.41883722222224,
+        379.38404083333336,
+        0.005068055555555556,
+        0.010852500000000001,
+        0.003703888888888889,
+        0.001096111111111111,
+        24.022129444444445,
+        0.004546666666666666,
+        11.017673055555555,
+        53.10846222222222,
+        24.02067138888889,
+        0.010271944444444445,
+        6.75,
+        0.010339999999999998,
+        24.008145833333334,
+        4.825511666666666,
+        9.0,
+        7.871824166666666,
+        6.590714722222223
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 8,
+      "event_count": 74,
+      "avg_recovery_hours": 22.568013762254903,
+      "std_recovery_hours": 46.727247351388975,
+      "coefficient_of_variation": 2.070507747985358,
+      "event_type": "planned",
+      "recovery_times": [
+        12.109163333333333,
+        12.10168527777778,
+        12.1449825,
+        11.961616944444446,
+        168.0189713888889,
+        3.996255,
+        12.104141944444445,
+        11.641728055555555,
+        12.179904444444444,
+        12.18108638888889,
+        12.012749444444445,
+        222.39319611111114,
+        12.115124999999999,
+        11.953365833333333,
+        1.3838183333333334,
+        12.163544444444446,
+        12.044049166666666,
+        12.126250833333332,
+        12.010494722222223,
+        2.0192913888888886,
+        1.0166666666666666,
+        189.00247777777778,
+        12.082163333333334,
+        12.142586944444446,
+        12.040688333333334,
+        11.333191666666666,
+        11.997208055555555,
+        0.1344313888888889,
+        13.001782777777777,
+        12.139168055555555,
+        12.30812,
+        0.00047583333333333337,
+        12.068657222222221,
+        15.028432777777779,
+        11.979058055555555,
+        12.051974444444445,
+        0.0264675,
+        1.9942077777777778,
+        12.439489722222222,
+        11.704185555555556,
+        0.03468972222222222,
+        11.987777500000002,
+        12.217501111111112,
+        4.009205555555555,
+        12.058418055555556,
+        12.080132777777779,
+        12.166666666666666,
+        24.00573027777778,
+        12.104713333333333,
+        22.0,
+        56.001110000000004,
+        5.0,
+        24.02961277777778,
+        11.87327138888889,
+        0.006573611111111111,
+        0.013288333333333334,
+        23.996578055555556,
+        12.089676944444445,
+        0.09050527777777778,
+        12.036969999999998,
+        24.001281666666667,
+        0.18479305555555556,
+        12.081500555555555,
+        12.07425111111111,
+        12.047060833333333,
+        239.5,
+        12.047439444444445,
+        11.733333333333333
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 7,
+      "event_count": 152,
+      "avg_recovery_hours": 1583.7375756172778,
+      "std_recovery_hours": 3165.2556196730834,
+      "coefficient_of_variation": 1.9985985483986468,
+      "event_type": "unplanned",
+      "recovery_times": [
+        0.8888130116666667,
+        2.017779722222222,
+        7914.248673888889,
+        0.016823888888888888,
+        1.5157875747222223
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 6,
+      "event_count": 198,
+      "avg_recovery_hours": 12.535939918333334,
+      "std_recovery_hours": 20.26175212417656,
+      "coefficient_of_variation": 1.616293014817702,
+      "event_type": "unplanned",
+      "recovery_times": [
+        47.62085472222222,
+        1.5398895419444445,
+        0.21462218055555557,
+        0.7683932286111111
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "HennurRd-DavisRdJunction",
+      "cluster_id": 8,
+      "event_count": 4,
+      "avg_recovery_hours": 9003.374769166667,
+      "std_recovery_hours": 14542.839339641616,
+      "coefficient_of_variation": 1.6152653546585254,
+      "event_type": "planned",
+      "recovery_times": [
+        1079.5,
+        54.178733333333334,
+        34184.32034333333,
+        695.5
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 0,
+      "event_count": 171,
+      "avg_recovery_hours": 6.591721833749999,
+      "std_recovery_hours": 10.16540315162276,
+      "coefficient_of_variation": 1.5421468635972022,
+      "event_type": "unplanned",
+      "recovery_times": [
+        24.198562499999998,
+        0.769021333611111,
+        0.6547861080555555,
+        0.7445173933333333
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 9,
+      "event_count": 138,
+      "avg_recovery_hours": 185.0581493563889,
+      "std_recovery_hours": 259.4994641138773,
+      "coefficient_of_variation": 1.4022590467719838,
+      "event_type": "unplanned",
+      "recovery_times": [
+        1.6127925463888888,
+        1.515848856111111,
+        552.0458066666667
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "BMTCJunction-K H Road",
+      "cluster_id": 6,
+      "event_count": 5,
+      "avg_recovery_hours": 178.58547253999998,
+      "std_recovery_hours": 249.96458608942262,
+      "coefficient_of_variation": 1.3996916016415333,
+      "event_type": "unplanned",
+      "recovery_times": [
+        1.9162119641666666,
+        1.7514381558333334,
+        532.0887675
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 4,
+      "event_count": 162,
+      "avg_recovery_hours": 32.875425680925936,
+      "std_recovery_hours": 45.55065407421356,
+      "coefficient_of_variation": 1.3855532857979598,
+      "event_type": "unplanned",
+      "recovery_times": [
+        97.29170833333335,
+        0.22004077805555555,
+        1.114527931388889
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "Nagavara-ORR Junction",
+      "cluster_id": 8,
+      "event_count": 3,
+      "avg_recovery_hours": 265.0531575,
+      "std_recovery_hours": 306.6975967198262,
+      "coefficient_of_variation": 1.157117310401504,
+      "event_type": "planned",
+      "recovery_times": [
+        3.6587433333333337,
+        96.00072916666667,
+        695.5
+      ],
+      "severity": "Critical"
+    },
+    {
+      "junction_name": "PoliceCornerJunc",
+      "cluster_id": 8,
+      "event_count": 2,
+      "avg_recovery_hours": 169.54648472222223,
+      "std_recovery_hours": 169.49902083333333,
+      "coefficient_of_variation": 0.9997200538308614,
+      "event_type": "planned",
+      "recovery_times": [
+        0.04746388888888889,
+        339.04550555555556
+      ],
+      "severity": "High"
+    },
+    {
+      "junction_name": "SubbannaJunction",
+      "cluster_id": 5,
+      "event_count": 4,
+      "avg_recovery_hours": 733.4650795138889,
+      "std_recovery_hours": 730.233442962491,
+      "coefficient_of_variation": 0.9955940144368705,
+      "event_type": "planned",
+      "recovery_times": [
+        1487.5,
+        1439.5,
+        5.377511944444445,
+        1.482806111111111
+      ],
+      "severity": "High"
+    },
+    {
+      "junction_name": "Unknown_Junction",
+      "cluster_id": 1,
+      "event_count": 65,
+      "avg_recovery_hours": 0.7846968406944445,
+      "std_recovery_hours": 0.7387635073611111,
+      "coefficient_of_variation": 0.9414635933889027,
+      "event_type": "unplanned",
+      "recovery_times": [
+        1.5234603480555555,
+        0.04593333333333334
+      ],
+      "severity": "High"
+    },
+    {
+      "junction_name": "VeerannapalyaJunction(BEL,HO)",
+      "cluster_id": 5,
+      "event_count": 11,
+      "avg_recovery_hours": 7.269204642857142,
+      "std_recovery_hours": 6.406859466994872,
+      "coefficient_of_variation": 0.881370078539524,
+      "event_type": "planned",
+      "recovery_times": [
+        5.016815277777778,
+        1.138071111111111,
+        7.388722777777777,
+        6.6702,
+        9.519746388888889,
+        21.00066,
+        0.15021694444444442
+      ],
+      "severity": "High"
+    },
+    {
+      "junction_name": "Marigowda-TavarkereRdJunc",
+      "cluster_id": 5,
+      "event_count": 3,
+      "avg_recovery_hours": 1.8848264814814815,
+      "std_recovery_hours": 1.2035811907655956,
+      "coefficient_of_variation": 0.6385633916919374,
+      "event_type": "planned",
+      "recovery_times": [
+        2.4365541666666664,
+        3.003455,
+        0.21447027777777777
+      ],
+      "severity": "High"
+    },
+    {
+      "junction_name": "LeprosyhospitalJunc",
+      "cluster_id": 8,
+      "event_count": 4,
+      "avg_recovery_hours": 2.6875139583333336,
+      "std_recovery_hours": 1.4888266422203245,
+      "coefficient_of_variation": 0.5539791291516204,
+      "event_type": "planned",
+      "recovery_times": [
+        1.4304230555555555,
+        0.9917777777777778,
+        4.004198888888889,
+        4.323656111111111
+      ],
+      "severity": "High"
+    }
+  ],
+  "summary": {
+    "Unknown_Junction": {
+      "junction_name": "Unknown_Junction",
+      "total_failure_points": 8,
+      "critical_count": 7,
+      "failure_details": [
+        {
+          "cluster_id": 5,
+          "event_type": "planned",
+          "cv": 2.5065973640780888
+        },
+        {
+          "cluster_id": 8,
+          "event_type": "planned",
+          "cv": 2.070507747985358
+        },
+        {
+          "cluster_id": 7,
+          "event_type": "unplanned",
+          "cv": 1.9985985483986468
+        },
+        {
+          "cluster_id": 6,
+          "event_type": "unplanned",
+          "cv": 1.616293014817702
+        },
+        {
+          "cluster_id": 0,
+          "event_type": "unplanned",
+          "cv": 1.5421468635972022
+        },
+        {
+          "cluster_id": 9,
+          "event_type": "unplanned",
+          "cv": 1.4022590467719838
+        },
+        {
+          "cluster_id": 4,
+          "event_type": "unplanned",
+          "cv": 1.3855532857979598
+        },
+        {
+          "cluster_id": 1,
+          "event_type": "unplanned",
+          "cv": 0.9414635933889027
+        }
+      ]
+    },
+    "HennurRd-DavisRdJunction": {
+      "junction_name": "HennurRd-DavisRdJunction",
+      "total_failure_points": 1,
+      "critical_count": 1,
+      "failure_details": [
+        {
+          "cluster_id": 8,
+          "event_type": "planned",
+          "cv": 1.6152653546585254
+        }
+      ]
+    },
+    "BMTCJunction-K H Road": {
+      "junction_name": "BMTCJunction-K H Road",
+      "total_failure_points": 1,
+      "critical_count": 1,
+      "failure_details": [
+        {
+          "cluster_id": 6,
+          "event_type": "unplanned",
+          "cv": 1.3996916016415333
+        }
+      ]
+    },
+    "Nagavara-ORR Junction": {
+      "junction_name": "Nagavara-ORR Junction",
+      "total_failure_points": 1,
+      "critical_count": 1,
+      "failure_details": [
+        {
+          "cluster_id": 8,
+          "event_type": "planned",
+          "cv": 1.157117310401504
+        }
+      ]
+    },
+    "PoliceCornerJunc": {
+      "junction_name": "PoliceCornerJunc",
+      "total_failure_points": 1,
+      "critical_count": 0,
+      "failure_details": [
+        {
+          "cluster_id": 8,
+          "event_type": "planned",
+          "cv": 0.9997200538308614
+        }
+      ]
+    },
+    "SubbannaJunction": {
+      "junction_name": "SubbannaJunction",
+      "total_failure_points": 1,
+      "critical_count": 0,
+      "failure_details": [
+        {
+          "cluster_id": 5,
+          "event_type": "planned",
+          "cv": 0.9955940144368705
+        }
+      ]
+    },
+    "VeerannapalyaJunction(BEL,HO)": {
+      "junction_name": "VeerannapalyaJunction(BEL,HO)",
+      "total_failure_points": 1,
+      "critical_count": 0,
+      "failure_details": [
+        {
+          "cluster_id": 5,
+          "event_type": "planned",
+          "cv": 0.881370078539524
+        }
+      ]
+    },
+    "Marigowda-TavarkereRdJunc": {
+      "junction_name": "Marigowda-TavarkereRdJunc",
+      "total_failure_points": 1,
+      "critical_count": 0,
+      "failure_details": [
+        {
+          "cluster_id": 5,
+          "event_type": "planned",
+          "cv": 0.6385633916919374
+        }
+      ]
+    },
+    "LeprosyhospitalJunc": {
+      "junction_name": "LeprosyhospitalJunc",
+      "total_failure_points": 1,
+      "critical_count": 0,
+      "failure_details": [
+        {
+          "cluster_id": 8,
+          "event_type": "planned",
+          "cv": 0.5539791291516204
+        }
+      ]
+    }
+  }
+}

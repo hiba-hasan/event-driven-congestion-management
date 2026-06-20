@@ -1,0 +1,62 @@
+{
+  "Central Zone 2": {
+    "zone_name": "Central Zone 2",
+    "event_count": 623,
+    "avg_recovery_hours": 1774.3414692985684,
+    "resilience_score": 0.0005632719210885649
+  },
+  "North Zone 1": {
+    "zone_name": "North Zone 1",
+    "event_count": 318,
+    "avg_recovery_hours": 911.3678487776235,
+    "resilience_score": 0.0010960491443662605
+  },
+  "South Zone 1": {
+    "zone_name": "South Zone 1",
+    "event_count": 233,
+    "avg_recovery_hours": 82.64665025756412,
+    "resilience_score": 0.01195505136094282
+  },
+  "West Zone 1": {
+    "zone_name": "West Zone 1",
+    "event_count": 432,
+    "avg_recovery_hours": 251.65049022049024,
+    "resilience_score": 0.003958037046068232
+  },
+  "South Zone 2": {
+    "zone_name": "South Zone 2",
+    "event_count": 354,
+    "avg_recovery_hours": 82.59363062882352,
+    "resilience_score": 0.011962633904971163
+  },
+  "North Zone 2": {
+    "zone_name": "North Zone 2",
+    "event_count": 413,
+    "avg_recovery_hours": 115.77977268216664,
+    "resilience_score": 0.008563126790130405
+  },
+  "Central Zone 1": {
+    "zone_name": "Central Zone 1",
+    "event_count": 269,
+    "avg_recovery_hours": 107.28679125428572,
+    "resilience_score": 0.0092347366508602
+  },
+  "West Zone 2": {
+    "zone_name": "West Zone 2",
+    "event_count": 358,
+    "avg_recovery_hours": 94.49202322529837,
+    "resilience_score": 0.010472078883915338
+  },
+  "East Zone 2": {
+    "zone_name": "East Zone 2",
+    "event_count": 189,
+    "avg_recovery_hours": 50.78209650170634,
+    "resilience_score": 0.019311693955208008
+  },
+  "East Zone 1": {
+    "zone_name": "East Zone 1",
+    "event_count": 253,
+    "avg_recovery_hours": 11.061794883333334,
+    "resilience_score": 0.08290640071999344
+  }
+}

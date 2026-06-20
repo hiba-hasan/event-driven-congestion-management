@@ -1,0 +1,134 @@
+{
+  "Non-corridor": {
+    "corridor_name": "Non-corridor",
+    "event_count": 1202,
+    "avg_recovery_hours": 678.0982704193209,
+    "resilience_score": 0.0014725409319368945
+  },
+  "ORR North 1": {
+    "corridor_name": "ORR North 1",
+    "event_count": 127,
+    "avg_recovery_hours": 33.65075069893162,
+    "resilience_score": 0.028859403615484523
+  },
+  "ORR East 1": {
+    "corridor_name": "ORR East 1",
+    "event_count": 100,
+    "avg_recovery_hours": 79.05183184460317,
+    "resilience_score": 0.012491906518032
+  },
+  "ORR North 2": {
+    "corridor_name": "ORR North 2",
+    "event_count": 87,
+    "avg_recovery_hours": 25.55868445615741,
+    "resilience_score": 0.03765246737468423
+  },
+  "Old Madras Road": {
+    "corridor_name": "Old Madras Road",
+    "event_count": 115,
+    "avg_recovery_hours": 4041.1540309722222,
+    "resilience_score": 0.00024739284854997945
+  },
+  "Bellary Road 1": {
+    "corridor_name": "Bellary Road 1",
+    "event_count": 289,
+    "avg_recovery_hours": 31.232029368981486,
+    "resilience_score": 0.03102503998592005
+  },
+  "CBD 2": {
+    "corridor_name": "CBD 2",
+    "event_count": 47,
+    "avg_recovery_hours": 0.8633170419444444,
+    "resilience_score": 0.5366773219421966
+  },
+  "ORR West 1": {
+    "corridor_name": "ORR West 1",
+    "event_count": 69,
+    "avg_recovery_hours": 13.78612633277778,
+    "resilience_score": 0.06763096550738966
+  },
+  "Mysore Road": {
+    "corridor_name": "Mysore Road",
+    "event_count": 342,
+    "avg_recovery_hours": 50.95336214387153,
+    "resilience_score": 0.019248032441687914
+  },
+  "West of Chord Road": {
+    "corridor_name": "West of Chord Road",
+    "event_count": 73,
+    "avg_recovery_hours": 648.8043043396295,
+    "resilience_score": 0.0015389248629497161
+  },
+  "Hosur Road": {
+    "corridor_name": "Hosur Road",
+    "event_count": 158,
+    "avg_recovery_hours": 15.0,
+    "resilience_score": 0.0625
+  },
+  "Magadi Road": {
+    "corridor_name": "Magadi Road",
+    "event_count": 98,
+    "avg_recovery_hours": 2.530902902583333,
+    "resilience_score": 0.2832136786509662
+  },
+  "Bannerghata Road": {
+    "corridor_name": "Bannerghata Road",
+    "event_count": 92,
+    "avg_recovery_hours": 105.97959847222224,
+    "resilience_score": 0.00934757668079727
+  },
+  "Airport New South Road": {
+    "corridor_name": "Airport New South Road",
+    "event_count": 45,
+    "avg_recovery_hours": 2012.0963601697529,
+    "resilience_score": 0.0004967472098134814
+  },
+  "Bellary Road 2": {
+    "corridor_name": "Bellary Road 2",
+    "event_count": 165,
+    "avg_recovery_hours": 3.789463649375,
+    "resilience_score": 0.20879164624842594
+  },
+  "ORR East 2": {
+    "corridor_name": "ORR East 2",
+    "event_count": 68,
+    "avg_recovery_hours": 12.042319336043361,
+    "resilience_score": 0.07667347917455372
+  },
+  "Tumkur Road": {
+    "corridor_name": "Tumkur Road",
+    "event_count": 206,
+    "avg_recovery_hours": 1.5228049007407407,
+    "resilience_score": 0.3963841990739681
+  },
+  "Old Airport Road": {
+    "corridor_name": "Old Airport Road",
+    "event_count": 28,
+    "avg_recovery_hours": 0.09733305555555556,
+    "resilience_score": 0.9113003521922722
+  },
+  "Hennur Main Road": {
+    "corridor_name": "Hennur Main Road",
+    "event_count": 34,
+    "avg_recovery_hours": 199.10307717770834,
+    "resilience_score": 0.004997424397986224
+  },
+  "Varthur Road": {
+    "corridor_name": "Varthur Road",
+    "event_count": 39,
+    "avg_recovery_hours": 5.776854907407407,
+    "resilience_score": 0.14756107570002053
+  },
+  "IRR(Thanisandra road)": {
+    "corridor_name": "IRR(Thanisandra road)",
+    "event_count": 51,
+    "avg_recovery_hours": 30.728906875,
+    "resilience_score": 0.031517001324364094
+  },
+  "CBD 1": {
+    "corridor_name": "CBD 1",
+    "event_count": 7,
+    "avg_recovery_hours": 0.0,
+    "resilience_score": 1.0
+  }
+}
