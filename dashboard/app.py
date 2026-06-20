@@ -225,7 +225,7 @@ with tabs[3]:
     st.subheader("🚦 Response Planner")
     st.markdown("Transform historical data into actionable operational recommendations for managing event-driven traffic impact")
 
-    # ===== HELPER FUNCTIONS FOR RESPONSE PLANNER =====
+    # HELPER FUNCTIONS FOR RESPONSE PLANNER
 
     def load_clusters():
         try:
@@ -358,12 +358,12 @@ with tabs[3]:
         else:
             return "none", "✓ Historical responses have been consistent."
 
-    # ===== LOAD DATA =====
+    # LOAD DATA
     clusters = load_clusters()
     failures_data = load_learning_failures()
     zones = get_zones_from_clusters(clusters)
 
-    # ===== SECTION 1: EVENT INPUTS =====
+    #SECTION 1: EVENT INPUTS
     st.markdown("### 1. Event Inputs")
     st.markdown("Provide details about the upcoming or current event")
 
@@ -381,7 +381,7 @@ with tabs[3]:
     with col4:
         road_closure = st.selectbox("Requires Road Closure", ["Yes", "No"])
 
-    # ===== SECTION 2: EVENT DNA MATCHING =====
+    #SECTION 2: EVENT DNA MATCHING
     st.markdown("---")
     st.markdown("### 2. Closest Event DNA Archetype")
 
@@ -402,7 +402,7 @@ with tabs[3]:
         st.warning("No matching cluster found")
         matched_cluster = {}
 
-    # ===== SECTION 3: PREDICTED IMPACT =====
+    # SECTION 3: PREDICTED IMPACT
     st.markdown("---")
     st.markdown("### 3. Predicted Impact")
 
@@ -429,7 +429,7 @@ with tabs[3]:
             event_causes = matched_cluster.get('event_causes', [])
             st.write(f"- **Event Causes:** {', '.join(event_causes) if event_causes else 'N/A'}")
 
-    # ===== SECTION 4: OPERATIONAL RECOMMENDATIONS =====
+    #SECTION 4: OPERATIONAL RECOMMENDATIONS
     st.markdown("---")
     st.markdown("### 4. Operational Recommendations")
 
@@ -490,7 +490,7 @@ with tabs[3]:
         else:
             st.markdown("**Localized Diversion Recommended:** Manage traffic within immediate vicinity.")
 
-    # ===== SECTION 5: INSTITUTIONAL LEARNING WARNING =====
+    #SECTION 5: INSTITUTIONAL LEARNING WARNING
     st.markdown("---")
     st.markdown("### 5. Institutional Learning Warning")
 
@@ -505,7 +505,7 @@ with tabs[3]:
         else:
             st.success(warning_message)
 
-    # ===== SECTION 6: CONFIDENCE SCORE =====
+    #SECTION 6: CONFIDENCE SCORE
     st.markdown("---")
     st.markdown("### 6. Recommendation Confidence")
 
@@ -539,4 +539,3 @@ This system helps cities forecast event-related traffic impacts and optimize res
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("**API Endpoint:** `http://localhost:8000/api`")
-st.sidebar.markdown("**Data:** Bengaluru Traffic Events (3,442 events, 280 junctions)")

@@ -1,383 +1,297 @@
-# 🏙️ Resilient City OS: Event-Driven Congestion Management
+# 🏙️ Resilient City OS
 
-A 48-hour prototype for the Flipkart Gridlock Hackathon demonstrating how historical and real-time data can forecast event-related traffic impact and recommend optimal resource deployment.
+### Event-Driven Congestion Intelligence & Response Planning
 
-## Problem Statement
+> **Most traffic systems stop at predicting congestion. Resilient City OS goes one step further—learning from historical disruptions and transforming those insights into operational playbooks for future events.**
 
-Cities face unprecedented traffic challenges from unplanned events:
-- **Political rallies, festivals, sports events** create localized congestion spikes
-- **Response is reactive** — traffic impact is discovered only after it occurs
-- **No learning system** — same events repeated cause similar failures
-- **Resource mismanagement** — barricades, police, diversions deployed inefficiently
-
-## The Solution: "The Near-Miss Engine"
-
-Our 3-layer architecture identifies **where and when** a city fails to manage event-induced congestion:
-
-### Layer 1: Engine (Event DNA Clustering)
-Clusters historical events into **archetypes** using unsupervised ML:
-- **Input**: Event metadata (type, priority, corridor, zone, junction)
-- **Algorithm**: K-Means clustering (k=10 optimized by silhouette score)
-- **Output**: DNA profiles — representative characteristics of each archetype
-- **Use Case**: When a new event occurs, find its historical twins to forecast impact
-
-### Layer 2: Logic (Resilience Scoring + Memory Loss Detector)
-Measures **junction immunocompetence** — ability to recover from congestion:
-- **Resilience Score** = 1 / (1 + avg_recovery_hours), normalized [0, 1]
-  - Score ≥ 0.5 = "Resilient"
-  - Score < 0.5 = "Fragile"
-- **Learning Failure Detection** = High variance in recovery times for same event DNA
-  - Coefficient of Variation (CV) > 0.5 = "Institutional Memory Gap"
-  - Example: Tree falls at Junction X take 2 hours some days, 200 hours other days → city isn't learning
-
-### Layer 3: Interface (Resilience Dashboard)
-Interactive Streamlit dashboard showing:
-1. **Resilience Map** — Junctions color-coded by score (red=fragile, green=resilient)
-2. **Event Archetypes** — DNA profiles, affected junctions, recovery patterns
-3. **Learning Failures** — Where the city repeats past mistakes
-4. **Deep Dive** — Per-junction analysis, recovery trends, event breakdown
+Built for the **Flipkart Gridlock Hackathon**, this prototype uses historical traffic disruption data to identify recurring event patterns, detect institutional learning failures, and recommend actionable traffic response strategies.
 
 ---
 
-## Quick Start
+## 🚨 Problem Statement
 
-### Prerequisites
-- Python 3.11+
-- 500MB disk space
+Political rallies, festivals, sports events, construction activities, and sudden gatherings create localized traffic breakdowns.
 
-### Setup (5 minutes)
+### Why It's Hard Today
+
+- Traffic impact is discovered only after congestion occurs.
+- Resource deployment is often experience-driven.
+- Cities repeatedly make the same operational mistakes.
+- There is no institutional memory for managing disruptions.
+
+---
+
+## 💡 Our Solution
+
+**Resilient City OS** converts historical disruption data into a decision-support system for traffic authorities.
+
+Given an upcoming event, the system can:
+
+- Forecast likely traffic impact
+
+- Match the event to historical disruption archetypes
+
+- Recommend manpower deployment
+
+- Suggest barricading requirements
+
+- Propose diversion strategies
+
+- Warn authorities about historical response inconsistencies
+
+---
+
+## 🧠 How It Works
+
+### 1. Event DNA Clustering
+
+Historical events are grouped into recurring disruption archetypes using unsupervised learning.
+
+**Input Features**
+
+- Event type
+- Priority
+- Zone
+- Corridor
+- Junction characteristics
+
+**Output**
+
+- 10 Event DNA archetypes representing how disruptions behave.
+
+Example:
+
+> Cluster 8 → High-priority planned disruptions involving processions and public events.
+
+---
+
+### 2. Resilience Scoring
+
+Measures how well junctions recover from disruptions.
+
+```
+Resilience Score = 1 / (1 + Average Recovery Time)
+```
+
+Higher scores indicate stronger recovery capability.
+
+This helps identify:
+
+- 🟢 Resilient junctions
+- 🔴 Fragile junctions
+
+---
+
+### 3. Institutional Learning Failure Detection
+
+Detects situations where similar events produce wildly different recovery outcomes.
+
+This indicates:
+
+> The city is repeating mistakes instead of learning from past responses.
+
+Learning gaps are identified using the **Coefficient of Variation (CV)** of recovery times.
+
+---
+
+### 4. 🚦 Response Planner
+
+The system's operational intelligence layer.
+
+Authorities provide details about an upcoming event.
+
+The planner:
+
+- Finds the closest Event DNA archetype
+- Forecasts expected impact
+- Estimates affected junctions
+- Generates dynamic recommendations for:
+  - Police deployment
+  - Barricading
+  - Diversion planning
+- Flags institutional warnings
+- Provides recommendation confidence scores
+
+---
+
+## 🖥️ Dashboard Features
+
+### 🗺️ Resilience Map
+
+Visualize vulnerable and resilient junctions across the city.
+
+### 🧬 Event Archetypes
+
+Explore historical disruption patterns and affected areas.
+
+### ⚠️ Learning Failures
+
+Identify where authorities repeatedly fail to respond consistently.
+
+### 🚦 Response Planner
+
+Generate operational response strategies for future events.
+
+---
+
+## 📊 Results from Bengaluru Dataset
+
+| Metric                  | Value       |
+| ----------------------- | ----------- |
+| Events Processed        | 3,442       |
+| Junctions Analyzed      | 280         |
+| Event Archetypes        | 10          |
+| Fragile Junctions       | 226         |
+| Resilient Junctions     | 54          |
+| Learning Failure Points | 16          |
+| Critical Learning Gaps  | 9 Junctions |
+
+### Key Insight
+
+Two planned-event archetypes revealed that:
+
+- Events often considered **low priority** can require significantly longer recovery times.
+- Authorities may systematically underestimate certain disruptions.
+
+---
+
+## 🏗️ System Architecture
+
+```
+Historical Events
+        │
+        ▼
+Event DNA Clustering
+        │
+        ▼
+Resilience Scoring
+        │
+        ▼
+Learning Failure Detection
+        │
+        ▼
+🚦 Response Planner
+        │
+        ▼
+Operational Recommendations
+```
+
+---
+
+## ⚙️ Technology Stack
+
+| Layer            | Technology             |
+| ---------------- | ---------------------- |
+| Data Processing  | Pandas, NumPy          |
+| Machine Learning | Scikit-Learn (K-Means) |
+| Backend          | FastAPI                |
+| Dashboard        | Streamlit              |
+| Visualization    | Plotly                 |
+| Storage          | JSON, Parquet          |
+| Language         | Python 3.11+           |
+
+---
+
+## 🚀 Quick Start
+
+### Clone the Repository
 
 ```bash
-# Clone repo and navigate to directory
+git clone <repository-url>
 cd gridlock-event-driven-congestion
-
-# Create virtual environment
-python3 -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run data pipeline (Phase 1: ~30 seconds)
-python src/clustering.py
-python src/resilience_scoring.py
-python src/learning_detector.py
 ```
 
-### Run the System
+### Install Dependencies
 
-**Terminal 1: Start API Server**
 ```bash
-source venv/bin/activate
-cd src && python api.py
-# API running at http://localhost:8000
-# Swagger docs at http://localhost:8000/docs
+python3 -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+
+pip install -r requirements.txt
 ```
 
-**Terminal 2: Start Dashboard**
+### Start the API
+
+```bash
+uvicorn src.api:app --reload
+```
+
+Swagger Documentation:
+
+```
+http://localhost:8000/docs
+```
+
+### Launch Dashboard
+
+Open a new terminal:
+
 ```bash
 source venv/bin/activate
 streamlit run dashboard/app.py
-# Dashboard running at http://localhost:8501
 ```
 
-Visit **http://localhost:8501** to explore the dashboard.
-
----
-
-## Architecture
+Dashboard:
 
 ```
-┌─────────────────────────────────────────────────────────┐
-│                  Resilient City OS                       │
-│                 (48-hour Prototype)                      │
-└─────────────────────────────────────────────────────────┘
-
-LAYER 1: ENGINE (Event DNA)
-├─ Input: events_raw.csv (8,173 events from Bengaluru)
-├─ Data Pipeline: Clean, encode, feature engineer
-├─ Clustering: K-Means (k=10) → 10 Event Archetypes
-└─ Output: cluster_profiles.json
-
-LAYER 2: LOGIC (Resilience + Learning)
-├─ Resilience Scoring: Recovery time → Score [0, 1]
-├─ Memory Loss Detection: High variance → Flags institutional gaps
-├─ Aggregate by: Junction, Corridor, Zone
-└─ Output: junction_scores.json, learning_failures.json
-
-LAYER 3: INTERFACE (API + Dashboard)
-├─ FastAPI: 5 endpoints (junctions, clusters, failures, summary)
-├─ Streamlit: 4 tabs (map, archetypes, failures, deep-dive)
-└─ Interactive filters: Zone, Corridor, Severity
-
-STORAGE
-├─ data/raw/ → Raw CSV
-├─ data/processed/ → Cleaned parquet + clustered data
-└─ results/ → JSON outputs for API/Dashboard
+http://localhost:8501
 ```
 
 ---
 
-## Key Findings (from Bengaluru test data)
-
-### 📊 System Stats
-- **Junctions Analyzed**: 280
-- **Events Processed**: 3,442
-- **Event Clusters**: 10 archetypes
-- **Avg Resilience Score**: 0.42 (city-wide fragility)
-- **Fragile Junctions**: 226 (81%)
-- **Resilient Junctions**: 54 (19%)
-
-### 🚨 Top 10 Fragile Junctions
-1. **SubedarChatramRd near SheshadripuramPS** (score: 0.000, avg recovery: 17,113h)
-2. **HennurRd-DavisRdJunction** (score: 0.000, avg recovery: 9,003h)
-3. **NavarangTheatreJunction** (score: 0.000, avg recovery: 3,888h)
-
-### 💡 Learning Failures Detected
-- **9 junctions** with institutional memory gaps
-- **16 failure points** (junction + cluster combinations with high variance)
-- **Example**: Unknown_Junction, Cluster 5 — same event type recovery ranges from 0.03h to 1,391h (CV=2.51)
-
-### 🧬 Event Archetypes
-- **Cluster 5 & 8**: Planned events (festivals, sports) — avg recovery 347-611 hours
-- **Cluster 7**: Long-duration incidents — avg recovery 13.8 hours
-- **Clusters 1-4**: Quick incidents — avg recovery 0-0.7 hours
-
----
-
-## Data Pipeline Modules
-
-### 1. `src/data_pipeline.py`
-- Load CSV, handle mixed datetime formats
-- Clean nulls (keep 3,442 / 8,173 events with valid data)
-- Feature engineering: Event type, priority, corridor, zone, hour of day
-
-### 2. `src/clustering.py`
-- K-Means with silhouette score optimization
-- Generate DNA profiles per cluster
-- Save clustered events to parquet
-
-### 3. `src/resilience_scoring.py`
-- Calculate recovery_time per event
-- Aggregate by junction: mean, median, std, resilience_score
-- Rank junctions by fragility
-
-### 4. `src/learning_detector.py`
-- For each (junction, cluster) pair: compute recovery time variance
-- Flag high CV (>0.5) as learning failure
-- Rank by severity (CV > 1.0 = Critical)
-
-### 5. `src/api.py` (FastAPI)
-- `GET /api/junctions` — List all junctions with scores
-- `GET /api/cluster/<id>` — Cluster profile
-- `GET /api/junction/<name>` — Junction details
-- `GET /api/learning-failures` — Learning failures
-- `GET /api/summary` — System stats
-
-### 6. `dashboard/app.py` (Streamlit)
-- 4 interactive tabs
-- Real-time filtering & sorting
-- Plotly visualizations
-- Caching for performance
-
----
-
-## Unique Value Proposition
-
-### Problem It Solves
-Traditional traffic management is **reactive**. A tree falls, traffic backs up, then officials respond. By the time data is analyzed, the damage is done.
-
-### Our Innovation
-**Proactive + Predictive + Accountable**
-
-1. **"Event DNA" (Proactive)**
-   - Every event type has a signature impact pattern
-   - When a new event occurs, find historical twins → forecast impact
-
-2. **"Resilience Score" (Predictive)**
-   - Identify vulnerable junctions before they fail
-   - Pre-position resources (police, barricades, traffic diversions)
-
-3. **"Learning Failure Detection" (Accountable)**
-   - Prove *when* the city repeats past mistakes
-   - Drive process improvements, budget allocation
-
-### Why It Works
-- **Data-driven** vs. experience-driven decisions
-- **Quantified** impact (recovery time in hours)
-- **Actionable** (top 10 fragile junctions, top learning failures)
-- **Scalable** (works for any city with event logs)
-
----
-
-## Results & Key Metrics
-
-| Metric | Value |
-|--------|-------|
-| Data Processed | 8,173 events → 3,442 valid |
-| Junctions Analyzed | 280 |
-| Clusters Identified | 10 DNA archetypes |
-| Fragility Level | 81% of junctions under-resourced |
-| Learning Gaps Found | 9 critical junctions |
-| Avg Recovery Time | 35 hours (city-wide) |
-| Most Resilient Junction | 0.53 score (UrvashiJunction) |
-| Least Resilient Junction | 0.00 score (17,113h avg recovery) |
-
----
-
-## Technology Stack
-
-| Component | Technology |
-|-----------|-----------|
-| Data Processing | Pandas, NumPy |
-| Clustering | Scikit-Learn (K-Means) |
-| API | FastAPI, Uvicorn |
-| Dashboard | Streamlit, Plotly |
-| Storage | Parquet, JSON |
-| Python | 3.11+ |
-
----
-
-## Pitch for Judges
-
-### The Ask
-Give us 48 hours + this dataset. We'll build a **proactive traffic management system** that:
-
-1. **Quantifies** event impact using historical data
-2. **Identifies** vulnerable junctions needing resources
-3. **Flags** when the city stops learning from past events
-
-### Why It Matters for Flipkart Logistics
-- Gridlock costs Flipkart ₹X in delays, customer SLAs missed, rider inefficiency
-- **Our system** identifies which 5% of junctions cause 50% of delays
-- **Pre-position logistics** resources before events occur
-- **Reduce average delivery times** by optimizing for congestion patterns
-
-### What's Built
-✅ Event DNA clustering (10 archetypes identified)
-✅ Resilience scoring (280 junctions ranked)
-✅ Learning failure detection (9 institutional gaps found)
-✅ FastAPI (5 endpoints, Swagger docs)
-✅ Interactive dashboard (4 analytical tabs)
-✅ Production-ready code (modular, tested)
-
-### What's Next (Post-48h)
-- Real-time event ingestion (Kafka)
-- Predictive ML model (forecast recovery time for new events)
-- Optimization engine (recommend optimal police/barricade placement)
-- Integration with Flipkart logistics APIs
-
----
-
-## File Structure
+## 📁 Project Structure
 
 ```
 gridlock-event-driven-congestion/
-├── data/
-│   ├── raw/
-│   │   └── events_raw.csv                 # Input data
-│   └── processed/
-│       ├── events_cleaned.parquet         # After pipeline
-│       └── events_clustered.parquet       # After clustering
-├── src/
-│   ├── data_pipeline.py                   # Load, clean, engineer
-│   ├── clustering.py                      # K-Means clustering
-│   ├── resilience_scoring.py              # Resilience scores
-│   ├── learning_detector.py               # Learning failures
-│   └── api.py                             # FastAPI server
 ├── dashboard/
-│   └── app.py                             # Streamlit dashboard
+├── src/
 ├── results/
-│   ├── cluster_profiles.json              # DNA profiles
-│   ├── junction_scores.json               # Resilience scores
-│   ├── corridor_scores.json               # Corridor aggregates
-│   ├── zone_scores.json                   # Zone aggregates
-│   └── learning_failures.json             # Memory gaps
-├── config.yaml                            # Configuration
-├── requirements.txt                       # Dependencies
-└── README.md                              # This file
+├── data/
+├── README.md
+├── requirements.txt
+├── config.yaml
 ```
 
 ---
 
-## Testing the System
+## 🎯 Why This Matters
 
-### Test Endpoints
-```bash
-# Health check
-curl http://localhost:8000/api/health
+Traditional systems are reactive.
 
-# Get summary
-curl http://localhost:8000/api/summary
+They answer:
 
-# List junctions (with filter)
-curl "http://localhost:8000/api/junctions?limit=10&sort_by=resilience"
+> "What happened?"
 
-# Get specific junction
-curl "http://localhost:8000/api/junction/UrvashiJunction"
+Resilient City OS answers:
 
-# Get cluster
-curl http://localhost:8000/api/cluster/0
+> "What is likely to happen, and what should we do about it?"
 
-# Get learning failures
-curl "http://localhost:8000/api/learning-failures?severity=Critical"
-```
-
-### API Documentation
-Visit **http://localhost:8000/docs** for interactive Swagger documentation.
+By combining event intelligence, resilience analysis, and institutional memory, cities can move from reacting to congestion to proactively managing it.
 
 ---
 
-## Future Enhancements
+## 🏆 Built for Flipkart Gridlock Hackathon
 
-1. **Predictive Model**
-   - Input: Event metadata → Output: Forecasted recovery time
-   - Retrain monthly as new events occur
+### What We Built
 
-2. **Real-Time Ingestion**
-   - Kafka topic for incoming events
-   - Auto-update resilience scores
-
-3. **Optimization Engine**
-   - Given an event, recommend:
-     - Which junctions to barricade
-     - Which police checkpoints to activate
-     - Which alternative routes to promote
-
-4. **Multi-City Support**
-   - Replicable architecture for Bangalore, Mumbai, Delhi, etc.
-   - Benchmark resilience across cities
-
-5. **Mobile App**
-   - Commuter notifications before major events
-   - "Expected delays: +45 min" warnings
+- ✅ Event DNA Clustering
+- ✅ Resilience Scoring
+- ✅ Learning Failure Detection
+- ✅ FastAPI Service Layer
+- ✅ Interactive Streamlit Dashboard
+- ✅ Dynamic Response Planner
+- ✅ Operational Recommendations
 
 ---
 
-## Contributors
+## 🔮 Future Enhancements
 
-**Built in 48 hours for Flipkart Gridlock Hackathon**
-
-- Data Engineering: Event clustering, resilience metrics
-- Backend: FastAPI with Swagger docs
-- Frontend: Interactive Streamlit dashboard
-- Analytics: Learning failure detection
-
----
-
-## License
-
-Open source — feel free to fork and adapt for your city!
+- Real-time event ingestion
+- Live traffic integration
+- Route optimization engine
+- Multi-city deployment
+- Citizen alert system
 
 ---
 
-## Contact & Questions
-
-For questions about this prototype:
-- Check the code comments in `src/` modules
-- Review the API docs at `http://localhost:8000/docs`
-- Explore the dashboard at `http://localhost:8501`
-
----
-
-**Built with ❤️ for smarter cities**
+> **"Most systems stop at predicting congestion. Resilient City OS transforms historical disruption intelligence into actionable response playbooks for smarter cities."**
