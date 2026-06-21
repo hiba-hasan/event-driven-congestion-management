@@ -203,12 +203,208 @@ with tabs[1]:
         st.error(f"Error loading clusters: {e}")
 
 with tabs[2]:
-    st.subheader("Institutional Learning Failures")
+    st.subheader("Institutional Learning DashBoard")
     st.markdown("Junctions where similar events have wildly different recovery times, indicating the city is not learning from past events")
 
     failures_data = fetch_learning_failures()
     failures = failures_data.get('failures', [])
 
+    # =========================================================================
+    # 🧠 INSTITUTIONAL MEMORY REPORT
+    # Computed entirely from existing artifacts — no new ML, no pipeline rerun.
+    # Mirrors Phase 1 Unknown_Junction exclusion for consistency.
+    # =========================================================================
+    st.markdown("### 🧠 Institutional Memory Report")
+    st.markdown(
+        "An executive summary of what Bengaluru's traffic network has **learned** — "
+        "and where it continues to struggle — across **2,195 historical disruption events**."
+    )
+
+    # Load junction scores for mastered-playbook computation
+    try:
+        with open('results/junction_scores.json') as _f:
+            _junction_scores = json.load(_f)
+    except Exception:
+        _junction_scores = {}
+
+    # Build working sets ─ consistent with Phase 1 Unknown_Junction exclusion
+    _failed_junctions = {
+        r['junction_name'] for r in failures
+        if r['junction_name'] != 'Unknown_Junction'
+    }
+    _all_clean = {
+        k: v for k, v in _junction_scores.items()
+        if k != 'Unknown_Junction'
+    }
+
+    # Mastered: ≥3 events and never flagged as a learning failure
+    _mastered = sorted(
+        [v for k, v in _all_clean.items()
+         if k not in _failed_junctions and v.get('event_count', 0) >= 3],
+        key=lambda x: x['event_count'],
+        reverse=True
+    )
+
+    # Persistent gaps: failure records excluding Unknown_Junction, ranked by CV
+    _gap_records = sorted(
+        [r for r in failures if r['junction_name'] != 'Unknown_Junction'],
+        key=lambda x: x['coefficient_of_variation'],
+        reverse=True
+    )
+
+    # Derived executive metrics
+    _total_clean   = len(_all_clean)
+    _mastered_count = len(_mastered)
+    _gap_count     = len({r['junction_name'] for r in _gap_records})
+    _stable_pct    = round(_mastered_count / _total_clean * 100, 1) if _total_clean else 0
+    _total_events  = sum(v.get('event_count', 0) for v in _all_clean.values())
+    _gap_events    = sum(
+        _all_clean[j]['event_count']
+        for j in _failed_junctions
+        if j in _all_clean
+    )
+    _avg_cv_gaps   = round(
+        sum(r['coefficient_of_variation'] for r in _gap_records) / len(_gap_records), 2
+    ) if _gap_records else 0
+
+    # ── EXECUTIVE METRICS ROW ─────────────────────────────────────────────
+    _mc1, _mc2, _mc3, _mc4 = st.columns(4)
+    with _mc1:
+        st.metric(
+            "✅ Mastered Junctions", _mastered_count,
+            help="Junctions with ≥3 events and no detected response inconsistency (CV < 0.5 threshold)"
+        )
+    with _mc2:
+        st.metric(
+            "⚠️ Persistent Gaps", _gap_count,
+            help="Junctions where similar events produce widely different recovery outcomes"
+        )
+    with _mc3:
+        st.metric(
+            "📋 Stable Playbook Coverage", f"{_stable_pct}%",
+            help="Proportion of analysed junctions (≥3 events) with consistent operational responses"
+        )
+    with _mc4:
+        st.metric(
+            "📊 Events Analysed", f"{_total_events:,}",
+            help="Total historical disruption events across all clean (non-Unknown) junctions"
+        )
+
+    st.markdown("")
+
+    # ── KEY FINDING CALLOUT ───────────────────────────────────────────────
+    st.info(
+        f"🔍 **Key Finding:** **{_gap_count} junctions** have never achieved a consistent operational "
+        f"response across similar disruptions — showing an average response variability of "
+        f"**{_avg_cv_gaps}×** against an operational target of <0.5×. "
+        f"These junctions collectively account for **{_gap_events} historical events**, "
+        f"representing the highest-priority target for standardised playbook intervention."
+    )
+
+    st.markdown("")
+
+    # ── MASTERED PLAYBOOKS  |  PERSISTENT GAPS (two-column layout) ────────
+    _left_col, _right_col = st.columns(2)
+
+    with _left_col:
+        st.markdown("#### ✅ Mastered Playbooks")
+        st.caption(
+            "These junctions show stable response behaviour across similar events. "
+            "They can serve as reference templates when building response playbooks for new personnel."
+        )
+        if _mastered:
+            for _j in _mastered[:5]:
+                _jname  = _j['junction_name']
+                _jevts  = _j.get('event_count', 0)
+                _jres   = _j.get('resilience_score', 0)
+                _rlabel = "High" if _jres >= 0.7 else "Moderate" if _jres >= 0.4 else "Low"
+                _rclr   = "#27ae60" if _jres >= 0.7 else "#f39c12" if _jres >= 0.4 else "#e74c3c"
+                st.markdown(
+                    f'<div style="border-left:4px solid #27ae60; padding:8px 12px; '
+                    f'margin-bottom:8px; background:#0a1f12; border-radius:0 6px 6px 0;">'
+                    f'<span style="font-weight:700;color:#f0f0f0;">{_jname}</span><br>'
+                    f'<span style="color:#aab;font-size:0.82em;">'
+                    f'📊 {_jevts} events &nbsp;|&nbsp; Resilience: '
+                    f'<span style="color:{_rclr};font-weight:600;">{_rlabel} ({_jres:.2f})</span>'
+                    f'</span></div>',
+                    unsafe_allow_html=True,
+                )
+            if len(_mastered) > 5:
+                st.caption(f"… and {len(_mastered) - 5} more junctions with stable playbooks.")
+        else:
+            st.info("Insufficient data to identify mastered junctions.")
+
+    with _right_col:
+        st.markdown("#### ⚠️ Persistent Operational Gaps")
+        st.caption(
+            "These junctions continue to exhibit inconsistent responses across similar disruptions "
+            "and should be prioritised for targeted playbook development."
+        )
+        if _gap_records:
+            for _r in _gap_records[:5]:
+                _rname   = _r['junction_name']
+                _rcv     = _r['coefficient_of_variation']
+                _revts   = _r['event_count']
+                _rsev    = _r['severity']
+                _sclr    = "#e74c3c" if _rsev == "Critical" else "#e67e22"
+                _sborder = "#c0392b" if _rsev == "Critical" else "#d35400"
+                _sbg     = "#1f0a0a" if _rsev == "Critical" else "#1f150a"
+                st.markdown(
+                    f'<div style="border-left:4px solid {_sborder}; padding:8px 12px; '
+                    f'margin-bottom:8px; background:{_sbg}; border-radius:0 6px 6px 0;">'
+                    f'<span style="font-weight:700;color:#f0f0f0;">{_rname}</span><br>'
+                    f'<span style="color:#aab;font-size:0.82em;">'
+                    f'CV: <span style="color:{_sclr};font-weight:700;">{_rcv:.2f}×</span>'
+                    f' &nbsp;|&nbsp; {_revts} events'
+                    f' &nbsp;|&nbsp; <span style="color:{_sclr};">{_rsev}</span>'
+                    f'</span></div>',
+                    unsafe_allow_html=True,
+                )
+        else:
+            st.success("No persistent gap junctions detected in clean data.")
+
+    # ── WHY THIS MATTERS ──────────────────────────────────────────────────
+    st.markdown("")
+    with st.expander("📌 Why This Matters", expanded=True):
+        st.markdown(
+            """
+Traffic management systems typically respond to disruptions without systematically capturing
+institutional knowledge. Each event is handled in isolation — there is no feedback loop
+connecting past responses to future decisions.
+
+**This system changes that.**
+
+By tracking response variability (Coefficient of Variation) across recurring event archetypes,
+it identifies:
+
+- 🟢 **Where operational knowledge has stabilised** — junctions where responders have implicitly
+  developed reliable playbooks through repeated experience
+- 🔴 **Where it has not** — junctions where identical disruption types produce wildly different
+  recovery outcomes, signalling a failure to institutionalise learning
+
+The goal is not to replace experienced traffic controllers.
+It is to make their institutional knowledge **explicit, transferable, and improvable** —
+so that every officer benefits from the city's collective experience, not just the veterans.
+"""
+        )
+        if _gap_events > 0:
+            st.markdown(
+                f"**Priority Intervention Targets:** The **{_gap_count} persistent-gap junctions** "
+                f"account for **{_gap_events} historical events**. Standardising response "
+                f"playbooks at these locations — using mastered junctions as reference templates — "
+                f"represents the most immediate, evidence-based opportunity for measurable "
+                f"improvement in the city's operational resilience.\n\n"
+                f"*Assumption: playbook standardisation does not guarantee CV improvement; "
+                f"actual outcomes depend on implementation quality and field conditions.*"
+            )
+
+    st.markdown("---")
+    st.markdown("#### 📉 Response Variability Analysis")
+    st.markdown("Detailed breakdown of junctions where institutional learning has not yet stabilised.")
+
+    # =========================================================================
+    # EXISTING CONTENT — unchanged below
+    # =========================================================================
     if failures:
         df_failures = pd.DataFrame(failures)
 
@@ -223,7 +419,7 @@ with tabs[2]:
                 y='coefficient_of_variation',
                 color='severity',
                 color_discrete_map={'Critical': 'red', 'High': 'orange'},
-                title="Top Learning Failures by Coefficient of Variation",
+                title="Highest Priority Intervention Junctions",
                 labels={'coefficient_of_variation': 'Variation in Recovery Time', 'junction_name': 'Junction'}
             )
             fig_cv.update_layout(height=400, xaxis_tickangle=-45)
@@ -522,7 +718,7 @@ with tabs[3]:
     # ---------------------------------------------------------------------------
     # SECTION 0: TODAY'S UPCOMING EVENTS (Forecast Card panel)
     # ---------------------------------------------------------------------------
-    st.markdown("### 🗓️ Today's Upcoming Events")
+    st.markdown("### Event Twin Simulator")
     st.markdown(
         "Proactively flagged disruptions based on historical archetypes. "
         "Click **Generate Playbook** on any event to instantly load a full operational response plan."
@@ -655,22 +851,61 @@ with tabs[3]:
     st.markdown("### 3. Predicted Impact")
 
     if matched_cluster:
-        col1, col2, col3, col4, col5 = st.columns(5)
+        col1, col2, col3, col4, col5  = st.columns(5)
         with col1:
-            st.metric("Cluster ID", matched_cluster.get('cluster_id'))
-        with col2:
-            st.metric("Operational Duration (h)",f"{matched_cluster.get('avg_recovery_hours', 0):.1f}")
-        with col3:
-            st.metric("Primary Corridor", matched_cluster.get('dominant_corridor', 'N/A'))
-        with col4:
-            st.metric("Primary Zone", matched_cluster.get('dominant_zone', 'N/A'))
-        with col5:
-            affected_junctions = matched_cluster.get('affected_junctions', [])
-            st.metric("Affected Junctions", len(affected_junctions))
+            archetype_name = matched_cluster.get(
+                "archetype_name",
+                f"Cluster {matched_cluster.get('cluster_id')}"
+            )
 
+            st.metric(
+                "Closest Event Archetype",
+                archetype_name
+            )
+
+
+        with col2:
+            affected_junctions = matched_cluster.get('affected_junctions', [])
+            junction_count = len(affected_junctions)
+
+            if junction_count >= 30:
+                impact_level = "🔴 Severe"
+            elif junction_count >= 15:
+                impact_level = "🟠 Moderate"
+            else:
+                impact_level = "🟢 Localized"
+
+            st.metric(
+                "Historical Impact Level",
+                impact_level
+            )
+
+
+        with col3:
+            st.metric(
+                "Primary Corridor",
+                matched_cluster.get('dominant_corridor', 'N/A')
+            )
+
+
+        with col4:
+            st.metric(
+                "Primary Zone",
+                matched_cluster.get('dominant_zone', 'N/A')
+            )
+
+
+        with col5:
+            st.metric(
+                "Historically Affected Junctions",
+                junction_count
+            )
+        
         st.caption(
-    "Operational Duration reflects the historical duration associated with similar disruption archetypes. "
-    "It may represent incident resolution, planned event schedules, or administrative operational periods."
+    "Impact estimates are derived from historical events with similar "
+    "characteristics. Junction counts represent locations historically "
+    "affected by comparable disruptions and should be interpreted as "
+    "decision-support indicators rather than deterministic forecasts."
 )
 
         st.markdown("**Event Characteristics:**")
