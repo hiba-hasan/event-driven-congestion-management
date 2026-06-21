@@ -27,6 +27,14 @@ def fetch_summary():
         return {}
 
 @st.cache_data
+def fetch_data_quality():
+    try:
+        response = requests.get(f"{API_BASE_URL}/data-quality")
+        return response.json()
+    except:
+        return {}
+
+@st.cache_data
 def fetch_junctions(zone=None, corridor=None):
     try:
         params = {"limit": 500}
@@ -64,6 +72,15 @@ def fetch_junction_details(junction_name):
         return {}
 
 summary = fetch_summary()
+
+# Show data quality warning if needed
+data_quality = fetch_data_quality()
+if data_quality and data_quality.get('unknown_junction', {}).get('percentage', 0) > 30:
+    st.warning(
+        f"⚠️ **Data Quality Note:** {data_quality.get('unknown_junction', {}).get('percentage', 0):.1f}% of records lack junction information. "
+        f"Operational recommendations exclude these records. "
+        f"[View audit](/api/data-quality)"
+    )
 
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
@@ -162,7 +179,10 @@ with tabs[1]:
                     with col1:
                         st.metric("Events", cluster.get('event_count'))
                     with col2:
-                        st.metric("Avg Recovery (h)", f"{cluster.get('avg_recovery_hours', 0):.1f}")
+                        st.metric("Operational Duration (h)",f"{cluster.get('avg_recovery_hours', 0):.1f}")
+                        st.caption("Represents the historical operational duration associated with similar disruption archetypes. "
+                        "For planned events, this may reflect scheduled event duration; for incidents, it may reflect resolution periods."
+                        )
                     with col3:
                         st.metric("Event Type", cluster.get('dominant_event_type'))
                     with col4:
@@ -264,6 +284,21 @@ with tabs[3]:
             if zone:
                 zones.add(zone)
         return sorted(list(zones))
+    
+    def get_all_dataset_zones():
+        """Return all operational zones present in the Astram dataset"""
+        return [
+            "Central Zone 1",
+            "Central Zone 2",
+            "East Zone 1",
+            "East Zone 2",
+            "North Zone 1",
+            "North Zone 2",
+            "South Zone 1",
+            "South Zone 2",
+            "West Zone 1",
+            "West Zone 2"
+        ]
 
     def calculate_event_dna_similarity(event_cause, zone, priority, clusters):
         """
@@ -326,28 +361,83 @@ with tabs[3]:
     def calculate_police_deployment(recovery_hours, affected_junctions, learning_penalty):
         """
         Calculate recommended police officers based on:
-        - Recovery hours
-        - Number of affected junctions
+        - Recovery hours (1 officer per ~100 hours)
+        - Number of affected junctions (1 officer per ~10 junctions)
         - Learning failure severity penalty
+        Returns: (total_officers, breakdown_dict)
         """
-        officers = 2 + (recovery_hours / 100) + (affected_junctions / 10) + learning_penalty
-        return max(round(officers), 2)
+        base = 2
+        recovery_component = recovery_hours / 100
+        junction_component = affected_junctions / 10
+
+        total = base + recovery_component + junction_component + learning_penalty
+        officers = max(round(total), 2)
+
+        breakdown = {
+            'base': base,
+            'recovery': round(recovery_component, 1),
+            'junctions': round(junction_component, 1),
+            'learning_penalty': round(learning_penalty, 1),
+            'total': round(total, 1),
+            'recommended': officers,
+        }
+
+        return officers, breakdown
 
     def calculate_barricades(road_closure, affected_junctions, recovery_hours):
         """
         Calculate recommended barricades based on:
-        - Road closure requirement
-        - Number of affected junctions
-        - Recovery time
+        - Road closure requirement (+2)
+        - Number of affected junctions (>20: +1)
+        - Recovery time (>300h: +1)
+        Returns: (total_barricades, breakdown_dict)
         """
+        breakdown = {
+            'rules': []
+        }
+
         barricades = 0
+
+        # Rule 1: Road closure
         if road_closure == "Yes":
             barricades += 2
+            breakdown['rules'].append({'rule': 'Road closure', 'value': 2, 'applied': True})
+        else:
+            breakdown['rules'].append({'rule': 'Road closure', 'value': 0, 'applied': False})
+
+        # Rule 2: Affected junctions
         if affected_junctions > 20:
             barricades += 1
+            breakdown['rules'].append({
+                'rule': f'Affected junctions > 20 ({affected_junctions})',
+                'value': 1,
+                'applied': True
+            })
+        else:
+            breakdown['rules'].append({
+                'rule': f'Affected junctions ≤ 20 ({affected_junctions})',
+                'value': 0,
+                'applied': False
+            })
+
+        # Rule 3: Recovery time
         if recovery_hours > 300:
             barricades += 1
-        return barricades
+            breakdown['rules'].append({
+                'rule': f'Recovery hours > 300 ({recovery_hours:.1f}h)',
+                'value': 1,
+                'applied': True
+            })
+        else:
+            breakdown['rules'].append({
+                'rule': f'Recovery hours ≤ 300 ({recovery_hours:.1f}h)',
+                'value': 0,
+                'applied': False
+            })
+
+        breakdown['total'] = barricades
+
+        return barricades, breakdown
 
     def get_institutional_warning(cluster_failures):
         """Generate institutional warning based on learning failure severity"""
@@ -363,23 +453,181 @@ with tabs[3]:
     failures_data = load_learning_failures()
     zones = get_zones_from_clusters(clusters)
 
+    # ---------------------------------------------------------------------------
+    # SEEDED UPCOMING EVENTS
+    # Grounded in actual dataset event types and Astram zone names.
+    # These act as proactive "intelligence feed" — no new ML required.
+    # ---------------------------------------------------------------------------
+    SEEDED_EVENTS = [
+        {
+            "title": "Political Rally",
+            "location": "North Zone 1",
+            "emoji": "📢",
+            "event_cause": "political_rally",
+            "zone": "North Zone 1",
+            "priority": "High",
+            "road_closure": "Yes",
+            "time": "14:00 – 18:00",
+            "duration": "~4 hrs",
+            "risk": "High",
+            "risk_emoji": "🔴",
+            "risk_bg": "#c0392b",
+            "description": "Large political gathering expected near Central Junction. High crowd density, road closure likely.",
+        },
+        {
+            "title": "Religious Festival",
+            "location": "South Zone 2",
+            "emoji": "🪔",
+            "event_cause": "festival",
+            "zone": "South Zone 2",
+            "priority": "Low",
+            "road_closure": "No",
+            "time": "09:00 – 15:00",
+            "duration": "~6 hrs",
+            "risk": "Moderate",
+            "risk_emoji": "🟡",
+            "risk_bg": "#b7950b",
+            "description": "Annual procession through arterial roads. Partial crowd spillover and localised slow-downs anticipated.",
+        },
+        {
+            "title": "Road Construction",
+            "location": "East Zone 1",
+            "emoji": "🚧",
+            "event_cause": "construction",
+            "zone": "East Zone 1",
+            "priority": "High",
+            "road_closure": "Yes",
+            "time": "06:00 – 20:00",
+            "duration": "All day",
+            "risk": "High",
+            "risk_emoji": "🔴",
+            "risk_bg": "#c0392b",
+            "description": "Scheduled flyover construction causing full lane closure on a major corridor.",
+        },
+    ]
+
+    # ---------------------------------------------------------------------------
+    # SESSION STATE — drives selectbox pre-population when a card is clicked
+    # ---------------------------------------------------------------------------
+    _ALL_CAUSES = ["construction", "public_event", "procession", "sports_event",
+                   "festival", "political_rally", "sudden_gathering"]
+
+    if "planner_cause" not in st.session_state:
+        st.session_state.planner_cause = _ALL_CAUSES[0]
+        st.session_state.planner_zone = zones[0] if zones else "Central Zone 1"
+        st.session_state.planner_priority = "High"
+        st.session_state.planner_road_closure = "No"
+        st.session_state.planner_preset_name = None
+
+    # ---------------------------------------------------------------------------
+    # SECTION 0: TODAY'S UPCOMING EVENTS (Forecast Card panel)
+    # ---------------------------------------------------------------------------
+    st.markdown("### 🗓️ Today's Upcoming Events")
+    st.markdown(
+        "Proactively flagged disruptions based on historical archetypes. "
+        "Click **Generate Playbook** on any event to instantly load a full operational response plan."
+    )
+
+    card_cols = st.columns(3)
+    for _i, _evt in enumerate(SEEDED_EVENTS):
+        with card_cols[_i]:
+            # Card body — styled HTML for visual impact
+            st.markdown(
+                f"""
+<div style="
+    border: 1px solid #2c2c3e;
+    border-radius: 12px;
+    padding: 18px 16px 14px 16px;
+    background: linear-gradient(145deg, #1a1a2e, #16213e);
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+">
+    <div style="font-size: 1.6em; line-height: 1;">{_evt['emoji']}</div>
+    <div style="font-weight: 700; font-size: 1.05em; color: #f0f0f0; margin-top: 6px;">
+        {_evt['title']}
+    </div>
+    <div style="color: #8899aa; font-size: 0.83em;">📍 {_evt['location']}</div>
+    <div style="color: #aabbcc; font-size: 0.82em;">🕐 {_evt['time']}</div>
+    <div style="color: #aabbcc; font-size: 0.82em;">⏱️ Duration: {_evt['duration']}</div>
+    <div style="margin-top: 8px;">
+        <span style="
+            background: {_evt['risk_bg']};
+            color: white;
+            padding: 3px 12px;
+            border-radius: 20px;
+            font-size: 0.78em;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+        ">{_evt['risk_emoji']} {_evt['risk']} Risk</span>
+    </div>
+    <div style="color: #99aabb; font-size: 0.8em; margin-top: 8px; line-height: 1.4;">
+        {_evt['description']}
+    </div>
+</div>
+""",
+                unsafe_allow_html=True,
+            )
+            st.write("")  # vertical breathing room before button
+            if st.button("📋 Generate Playbook", key=f"preset_btn_{_i}", use_container_width=True):
+                # Resolve zone: fall back to first available if preset zone not in cluster zones
+                _zone_list = zones if zones else ["Central Zone 1"]
+                _resolved_zone = _evt["zone"] if _evt["zone"] in _zone_list else _zone_list[0]
+                st.session_state.planner_cause = _evt["event_cause"]
+                st.session_state.planner_zone = _resolved_zone
+                st.session_state.planner_priority = _evt["priority"]
+                st.session_state.planner_road_closure = _evt["road_closure"]
+                st.session_state.planner_preset_name = _evt["title"]
+                st.rerun()
+
+    # Confirmation banner shown after a preset is loaded
+    if st.session_state.planner_preset_name:
+        st.success(
+            f"✅ Playbook pre-loaded for **{st.session_state.planner_preset_name}** — "
+            f"inputs are auto-populated below. Review and scroll down for recommendations."
+        )
+
+    st.markdown("---")
+
+    # ---------------------------------------------------------------------------
     #SECTION 1: EVENT INPUTS
+    # ---------------------------------------------------------------------------
     st.markdown("### 1. Event Inputs")
     st.markdown("Provide details about the upcoming or current event")
+
+    # Selectboxes use index= so session state can pre-populate them when a
+    # Forecast Card button is clicked. All existing downstream logic is unchanged.
+    _zone_list = zones if zones else ["Central Zone 2"]
+    _cause_idx = _ALL_CAUSES.index(st.session_state.planner_cause) \
+        if st.session_state.planner_cause in _ALL_CAUSES else 0
+    _zone_idx = _zone_list.index(st.session_state.planner_zone) \
+        if st.session_state.planner_zone in _zone_list else 0
+    _priority_list = ["High", "Low"]
+    _priority_idx = _priority_list.index(st.session_state.planner_priority) \
+        if st.session_state.planner_priority in _priority_list else 0
+    _closure_list = ["Yes", "No"]
+    _closure_idx = _closure_list.index(st.session_state.planner_road_closure) \
+        if st.session_state.planner_road_closure in _closure_list else 1
 
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         event_cause = st.selectbox(
             "Event Cause",
-            ["construction", "public_event", "procession", "sports_event",
-             "festival", "political_rally", "sudden_gathering"]
+            _ALL_CAUSES,
+            index=_cause_idx,
         )
     with col2:
-        zone = st.selectbox("Zone", zones) if zones else st.selectbox("Zone", ["Central Zone 2"])
+        zone = st.selectbox(
+            "Zone",
+            _zone_list,
+            index=_zone_idx,
+        )
+        st.caption("Operational zones sourced from the Astram Bengaluru dataset.")
     with col3:
-        priority = st.selectbox("Priority", ["High", "Low"])
+        priority = st.selectbox("Priority", _priority_list, index=_priority_idx)
     with col4:
-        road_closure = st.selectbox("Requires Road Closure", ["Yes", "No"])
+        road_closure = st.selectbox("Requires Road Closure", _closure_list, index=_closure_idx)
 
     #SECTION 2: EVENT DNA MATCHING
     st.markdown("---")
@@ -411,7 +659,7 @@ with tabs[3]:
         with col1:
             st.metric("Cluster ID", matched_cluster.get('cluster_id'))
         with col2:
-            st.metric("Expected Recovery (h)", f"{matched_cluster.get('avg_recovery_hours', 0):.1f}")
+            st.metric("Operational Duration (h)",f"{matched_cluster.get('avg_recovery_hours', 0):.1f}")
         with col3:
             st.metric("Primary Corridor", matched_cluster.get('dominant_corridor', 'N/A'))
         with col4:
@@ -419,6 +667,11 @@ with tabs[3]:
         with col5:
             affected_junctions = matched_cluster.get('affected_junctions', [])
             st.metric("Affected Junctions", len(affected_junctions))
+
+        st.caption(
+    "Operational Duration reflects the historical duration associated with similar disruption archetypes. "
+    "It may represent incident resolution, planned event schedules, or administrative operational periods."
+)
 
         st.markdown("**Event Characteristics:**")
         col1, col2 = st.columns(2)
@@ -449,8 +702,8 @@ with tabs[3]:
             learning_penalty = 1
 
         # Recommendations
-        officers = calculate_police_deployment(recovery_hours, num_affected_junctions, learning_penalty)
-        barricades = calculate_barricades(road_closure, num_affected_junctions, recovery_hours)
+        officers, officers_breakdown = calculate_police_deployment(recovery_hours, num_affected_junctions, learning_penalty)
+        barricades, barricades_breakdown = calculate_barricades(road_closure, num_affected_junctions, recovery_hours)
 
         col1, col2, col3, col4 = st.columns(4)
         with col1:
@@ -473,22 +726,50 @@ with tabs[3]:
         # Detailed recommendations
         st.markdown("**Detailed Recommendations:**")
 
-        st.markdown(f"**Police Deployment:** Deploy **{officers} officers** for this event.")
-        st.caption(f"Based on recovery hours ({recovery_hours:.1f}h), affected junctions ({num_affected_junctions}), and institutional learning penalty")
+        # Police deployment with breakdown
+        st.markdown(f"**🚔 Police Deployment:** {officers} officers")
+        with st.expander("📊 View calculation breakdown", expanded=False):
+            st.markdown("**Formula:** Base + Recovery Component + Junction Component + Learning Penalty")
+            col1, col2, col3, col4, col5 = st.columns(5)
+            with col1:
+                st.metric("Base", officers_breakdown['base'])
+            with col2:
+                st.metric("Recovery", f"{officers_breakdown['recovery']:.1f}")
+            with col3:
+                st.metric("Junctions", f"{officers_breakdown['junctions']:.1f}")
+            with col4:
+                st.metric("Learning", f"{officers_breakdown['learning_penalty']:.1f}")
+            with col5:
+                st.metric("Total", f"{officers_breakdown['total']:.1f}→{officers}")
+            st.caption(
+                f"Operational Duration: {recovery_hours:.1f}h ÷ 100 | "
+                f"Junctions: {num_affected_junctions} ÷ 10 | "
+                f"Learning Penalty: {'Critical' if learning_penalty >= 3 else 'High' if learning_penalty >= 1 else 'None'}"
+            )
 
         if coordinator_needed:
-            st.markdown("**🌟 Deploy Senior Traffic Coordinator** - Historical responses for similar events have shown inconsistency")
+            st.markdown("**👮 Deploy Senior Traffic Coordinator** - Historical responses for similar events have shown inconsistency")
         else:
             st.markdown("**Standard Supervision** - Coordinate through standard traffic management channels")
 
-        st.markdown(f"**Barricade Deployment:** Set up **{barricades} barricade units**")
-        st.caption(f"Road closure: {'Yes' if road_closure == 'Yes' else 'No'} | Junctions affected: {num_affected_junctions} | Recovery hours: {recovery_hours:.1f}h")
+        # Barricades with breakdown
+        st.markdown(f"**🚧 Barricades Required:** {barricades} units")
+        with st.expander("📊 View calculation breakdown", expanded=False):
+            st.markdown("**Rules Applied:**")
+            for rule in barricades_breakdown['rules']:
+                status = "✓" if rule['applied'] else "✗"
+                st.write(f"{status} {rule['rule']}: +{rule['value']} units")
+            st.caption(
+                f"Road closure: {'Yes' if road_closure == 'Yes' else 'No'} | "
+                f"Junctions: {num_affected_junctions} | "
+                f"Operational Duration: {recovery_hours:.1f}h"
+            )
 
         primary_corridor = matched_cluster.get('dominant_corridor', 'Non-corridor')
         if primary_corridor != "Non-corridor":
-            st.markdown(f"**Diversion Required:** Avoid **{primary_corridor}** corridor. Use neighboring corridors for traffic diversion.")
+            st.markdown(f"**🚦 Diversion Required:** Avoid **{primary_corridor}** corridor. Use neighboring corridors for traffic diversion.")
         else:
-            st.markdown("**Localized Diversion Recommended:** Manage traffic within immediate vicinity.")
+            st.markdown("**🚦 Localized Diversion Recommended:** Manage traffic within immediate vicinity.")
 
     #SECTION 5: INSTITUTIONAL LEARNING WARNING
     st.markdown("---")
@@ -518,6 +799,48 @@ with tabs[3]:
         with col2:
             st.metric("Score", f"{confidence_pct:.0f}%")
 
+        # Show confidence factors
+        with st.expander("📊 View confidence factors", expanded=False):
+            st.markdown("**Factors affecting confidence:**")
+
+            col1, col2, col3 = st.columns(3)
+
+            with col1:
+                cluster_size = matched_cluster.get('event_count', 0)
+                if cluster_size >= 100:
+                    cluster_factor = 1.0
+                    cluster_note = "✓ Large cluster"
+                elif cluster_size >= 50:
+                    cluster_factor = 0.85
+                    cluster_note = "~ Medium cluster"
+                else:
+                    cluster_factor = 0.7
+                    cluster_note = "⚠ Small cluster"
+
+                st.metric("Cluster Size Factor", f"{cluster_factor:.0%}")
+                st.caption(f"{cluster_note} ({cluster_size} events)")
+
+            with col2:
+                has_failures = len(get_cluster_failures(cluster_id, failures_data)) > 0
+                learning_factor = 0.8 if has_failures else 1.0
+                learning_note = "⚠ Inconsistency" if has_failures else "✓ Consistent"
+
+                st.metric("Learning Factor", f"{learning_factor:.0%}")
+                st.caption(f"{learning_note} responses")
+
+            with col3:
+                unknown_pct = 36.2  # From audit
+                data_factor = 0.85 if unknown_pct > 30 else 1.0
+                data_note = "⚠ Data quality" if unknown_pct > 30 else "✓ Good quality"
+
+                st.metric("Data Quality Factor", f"{data_factor:.0%}")
+                st.caption(f"{data_note}")
+
+            st.caption(
+                f"Final confidence = Base score ({similarity_score}/100) × "
+                f"Cluster factor × Learning factor × Data quality factor"
+            )
+
         if confidence >= 0.8:
             st.success("✓ High confidence in recommendations")
         elif confidence >= 0.5:
@@ -534,8 +857,7 @@ st.sidebar.markdown("""
 2. **Resilience Scoring** - Measures junction recovery ability
 3. **Learning Failure Detection** - Identifies institutional memory gaps
 
-This system helps cities forecast event-related traffic impacts and optimize resource deployment.
-""")
+This system helps cities learn from historical disruptions, estimate operational burden, and generate response playbooks for future events.""")
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("**API Endpoint:** `http://localhost:8000/api`")

@@ -66,6 +66,7 @@ class EventDNAClustering:
             self.cluster_profiles[int(cluster_id)] = profile
 
         print(f"\nGenerated profiles for {len(self.cluster_profiles)} clusters")
+        print("Note: Profiles include both mean and median recovery times. Use median for operational decisions (more robust to outliers).")
 
     def save_profiles(self, output_path):
         with open(output_path, 'w') as f:

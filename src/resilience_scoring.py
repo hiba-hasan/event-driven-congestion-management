@@ -24,7 +24,9 @@ class ResilienceScoring:
             median_recovery = float(np.median(recovery_times))
             std_recovery = float(np.std(recovery_times))
 
-            resilience_score = 1.0 / (1.0 + avg_recovery)
+            # Use median for resilience scoring to handle outliers
+            # Note: Audit shows mean >> median in many clusters, indicating administrative durations
+            resilience_score = 1.0 / (1.0 + median_recovery)
 
             self.junction_scores[junction] = {
                 'junction_name': junction,
@@ -39,7 +41,7 @@ class ResilienceScoring:
                 'event_types': list(junction_data['event_type'].unique()),
             }
 
-        print(f"Computed resilience scores for {len(self.junction_scores)} junctions")
+        print(f"Computed resilience scores for {len(self.junction_scores)} junctions (using median recovery for robustness)")
 
     def compute_aggregate_scores(self):
         for corridor in self.df['corridor'].unique():
