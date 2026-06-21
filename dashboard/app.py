@@ -1095,5 +1095,3 @@ st.sidebar.markdown("""
 
 This system helps cities learn from historical disruptions, estimate operational burden, and generate response playbooks for future events.""")
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("**API Endpoint:** `http://localhost:8000/api`")
