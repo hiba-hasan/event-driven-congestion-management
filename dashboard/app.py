@@ -6,6 +6,7 @@ import plotly.express as px
 from typing import Dict, List
 import json
 
+
 st.set_page_config(
     page_title="Resilient City OS",
     page_icon="🏙️",
@@ -16,7 +17,7 @@ st.set_page_config(
 st.title("🏙️ Resilient City OS - Event-Driven Congestion Management")
 st.markdown("---")
 
-API_BASE_URL = "http://localhost:8000/api"
+API_BASE_URL = "https://resilient-city-api.onrender.com/api"
 
 @st.cache_data
 def fetch_summary():
